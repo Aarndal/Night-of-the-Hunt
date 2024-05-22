@@ -6,12 +6,15 @@ using UnityEngine.UIElements;
 
 public class GetInput : MonoBehaviour
 {
-    public Vector2 movement;
+    public Vector2 movement;  // Movement script
 
     public bool getInput = false;
-    public bool isSprinting = false;
+     
+    public bool isSprinting = false;  // Movement script
 
+    public bool isShooting = false;  // Shoot script
 
+    public bool isDrinking = false;
 
     public void OnMove(InputAction.CallbackContext _context)
     {
@@ -36,6 +39,30 @@ public class GetInput : MonoBehaviour
         if(_context.canceled)
         {
             isSprinting = false;
+        }
+    }
+
+    public void OnShoot(InputAction.CallbackContext _context)
+    {
+        if(_context.performed)
+        {
+            isShooting = true;
+        }
+        if(_context.canceled)
+        {
+            isShooting = false;
+        }
+    }
+
+    public void OnDrink(InputAction.CallbackContext _context)
+    {
+        if (_context.performed)
+        {
+            isDrinking = true;
+        }
+        if (_context.canceled)
+        {
+            isDrinking = false;
         }
     }
 }

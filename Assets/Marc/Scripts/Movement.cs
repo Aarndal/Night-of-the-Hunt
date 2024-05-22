@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.EditorTools;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
     private GetInput myInput;  //Get Input through input system
-    private Rigidbody2D myRigid;
+    private Rigidbody2D myRigid; // Rigidbody of player 
+
 
     [Tooltip("Normal walk speed")]
     [SerializeField] private float normalSpeed;
@@ -33,6 +35,16 @@ public class Movement : MonoBehaviour
     [Space(5)]
     [Tooltip("How fast you want to increase the stamina after sprinting")]
     [SerializeField] private float increaseStamina;
+
+    [Space(5)]
+    [Tooltip("How much stamina the wine regenerate")]
+    [SerializeField] private float wineInfluence;
+
+
+
+    [Space(5)]
+    [Tooltip("Stamina circle")]
+    [SerializeField] private Image myImage;
     #endregion
 
 
@@ -41,6 +53,7 @@ public class Movement : MonoBehaviour
         myInput = GetComponent<GetInput>();
         myRigid = GetComponent<Rigidbody2D>();
 
+        Wine.myEvent += GetStamina;
     }
 
     private void FixedUpdate()
@@ -59,14 +72,14 @@ public class Movement : MonoBehaviour
         Vector2 moveDirection = new Vector2(myInput.movement.x, myInput.movement.y);
 
         if (myInput.isSprinting == false || stamina <= 0.0f)
-        {           
+        {
             myInput.isSprinting = false; // if its not set false -> player can sprint all the time
 
             moveDirection = transform.right * myInput.movement.x + transform.up * myInput.movement.y;
             myRigid.velocity = moveDirection * normalSpeed * Time.deltaTime;
 
 
-            IncreaseStamina();            
+            IncreaseStamina();
         }
 
         if (myInput.isSprinting == true && stamina > 0.0f)
@@ -74,18 +87,23 @@ public class Movement : MonoBehaviour
             moveDirection = transform.right * myInput.movement.x + transform.up * myInput.movement.y;
             myRigid.velocity = moveDirection * sprintSpeed * Time.deltaTime;
 
-            DecreaseStamina();          
+            DecreaseStamina();
         }
 
     }
 
+
+
     /// <summary>
-    /// increase stamina while walking
+    /// increase stamina while walking or while standing ( regenerate stamina while standing is possible cause myinput.getInput is after fist input never false again ( it is not supposed to be like this, but not relevant ))
     /// </summary>
     private void IncreaseStamina()
     {
-        stamina = Mathf.Clamp(stamina + (increaseStamina * Time.deltaTime), 0.0f, maxStamina); 
+        stamina = Mathf.Clamp(stamina + (increaseStamina * Time.deltaTime), 0.0f, maxStamina);
+        myImage.fillAmount += 0.1f * stamina;
+
     }
+
 
 
     /// <summary>
@@ -93,6 +111,12 @@ public class Movement : MonoBehaviour
     /// </summary>
     private void DecreaseStamina()
     {
-        stamina = Mathf.Clamp(stamina - (decreaseStamina * Time.deltaTime), 0.0f, maxStamina); 
+        stamina = Mathf.Clamp(stamina - (decreaseStamina * Time.deltaTime), 0.0f, maxStamina);
+        myImage.fillAmount -= 0.1f * stamina;
+    }
+
+    private void GetStamina()
+    {
+        stamina += wineInfluence;
     }
 }

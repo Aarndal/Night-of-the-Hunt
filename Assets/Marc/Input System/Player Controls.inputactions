@@ -2,7 +2,7 @@
     "name": "Player Controls",
     "maps": [
         {
-            "name": "Movement",
+            "name": "Player",
             "id": "491abaeb-cf6e-42ed-992e-49be6ee4fe1d",
             "actions": [
                 {
@@ -18,6 +18,24 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "dcc93f75-5a1a-4965-b12b-8254b1b9e9c2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Shoot ",
+                    "type": "Button",
+                    "id": "b3b2a5ab-17b9-4378-a1c3-07ea59bf2dde",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Drink",
+                    "type": "Button",
+                    "id": "b24e35ac-b5f2-45b7-a430-3ea10bae6f11",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -90,32 +108,26 @@
                     "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Shoot ",
-            "id": "9c245f82-4dde-4dfa-88cc-b28ed3d3c465",
-            "actions": [
-                {
-                    "name": "Shoot",
-                    "type": "Button",
-                    "id": "2bd42ab1-3281-4d17-bcb4-6531114625a7",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "764a6f68-d642-4293-ad12-b6f911dab7f0",
+                    "id": "bceb00a5-7a53-43a8-b1f0-1a729550a5ed",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Shoot",
+                    "action": "Shoot ",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "97b1b036-3634-454e-8686-f93d3dc11630",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drink",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
