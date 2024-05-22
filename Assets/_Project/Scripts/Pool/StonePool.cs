@@ -10,8 +10,8 @@ namespace _Project.Scripts.Items
     public class StonePool : ScriptableObject
     {
         [SerializeField] private GameObject StonePrefab;
-        private Stack<GameObject> StonePoolStack = new Stack<GameObject>();
-        
+        private readonly Stack<GameObject> StonePoolStack = new Stack<GameObject>();
+
         /// <summary>
         ///  The pool is initialized with the given number of stones.
         /// </summary>
@@ -23,6 +23,9 @@ namespace _Project.Scripts.Items
                 GameObject stone = Instantiate(this.StonePrefab);
                 stone.SetActive(false);
                 this.StonePoolStack.Push(stone);
+                
+                // When the stone is collected, it is added back to the pool.
+                stone.GetComponent<ICollectable>().OnCollect += AddStone;
             }
         }
 
@@ -43,7 +46,7 @@ namespace _Project.Scripts.Items
         /// When the stone is collected, it is added back to the pool.
         /// </summary>
         /// <param name="stone"></param>
-        public void AddStone(GameObject stone)
+        private void AddStone(GameObject stone)
         {
             stone.SetActive(false);
             this.StonePoolStack.Push(stone);
