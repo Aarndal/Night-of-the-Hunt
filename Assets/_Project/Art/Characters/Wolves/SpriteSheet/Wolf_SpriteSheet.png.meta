@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6d457c87c212e694d97c92451aaab083
+guid: b763c0e3a27195240a7aec7ea1905ff1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Wolf_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 725.5
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f2c7185bc7e4746b00facd0050520e
+      internalID: -1783008212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 0
+        width: 725.5
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0329f67bff3ea5b4d8c0f5daf3eb1ed8
+      internalID: 663802569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 0
+        width: 725.5
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51b0ce7cc55b5044bc5626b1e5eb291
+      internalID: -91968725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 0
+        width: 725.5
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33d95765d9f5f44389299d12ebc795b
+      internalID: -2101277269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wolf_SpriteSheet_0: -1783008212
+      Wolf_SpriteSheet_1: 663802569
+      Wolf_SpriteSheet_2: -91968725
+      Wolf_SpriteSheet_3: -2101277269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
