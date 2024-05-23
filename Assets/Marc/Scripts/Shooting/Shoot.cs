@@ -22,7 +22,7 @@ public class Shoot : MonoBehaviour
     {
         myInput = GetComponent<GetInput>();
 
-       // mainCamera = Camera.main;
+        mainCamera = Camera.main;
     }
 
 
@@ -38,16 +38,14 @@ public class Shoot : MonoBehaviour
         if(myInput.isShooting == true)
         {
             ShootStone();
-        }
-
-        
+        }     
     }
 
     private void ShootStone()
     {
         if(shootIndex == 0)
         {
-          //  mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             shootIndex = 1;
 
             GameObject tempStone = Instantiate(bulletObject, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
