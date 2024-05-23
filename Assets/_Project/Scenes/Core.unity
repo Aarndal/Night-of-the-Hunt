@@ -157,7 +157,7 @@ MonoBehaviour:
   _sceneSetup: []
   _isMainScene: 0
   _version: 1
-  _thisScenePath: Assets/Scenes/Core.unity
+  _thisScenePath: Assets/_Project/Scenes/Core.unity
 --- !u!4 &397854221
 Transform:
   m_ObjectHideFlags: 0
