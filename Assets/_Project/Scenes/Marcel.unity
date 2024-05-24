@@ -484,7 +484,7 @@ Transform:
   m_GameObject: {fileID: 1638253611}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -8.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -755,17 +755,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 3850946072942238295, guid: 5aa02108bf5d040d8989bf4d8d902f05, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: d11413f01f598e3429e032075d21d30e, type: 3}
     - target: {fileID: 8159706234850940527, guid: 5aa02108bf5d040d8989bf4d8d902f05, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.51
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8159706234850940527, guid: 5aa02108bf5d040d8989bf4d8d902f05, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.51
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8159706234850940527, guid: 5aa02108bf5d040d8989bf4d8d902f05, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.51
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8159706234850940527, guid: 5aa02108bf5d040d8989bf4d8d902f05, type: 3}
       propertyPath: m_LocalPosition.x
@@ -806,10 +810,6 @@ PrefabInstance:
     - target: {fileID: 8159706234850940527, guid: 5aa02108bf5d040d8989bf4d8d902f05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8159706234850940527, guid: 5aa02108bf5d040d8989bf4d8d902f05, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
