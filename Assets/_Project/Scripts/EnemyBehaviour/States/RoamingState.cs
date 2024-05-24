@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class RoamingState : State
 {
+    public RoamingState(Wolf wolf) : base(wolf)
+    {
+    }
+
     public override void Enter()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Roaming");
     }
 
     public override void Execute()

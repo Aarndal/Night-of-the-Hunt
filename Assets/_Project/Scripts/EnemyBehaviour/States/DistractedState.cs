@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DistractedState : State
 {
+    public DistractedState(Wolf wolf) : base(wolf)
+    {
+    }
+
     public override void Enter()
     {
         throw new System.NotImplementedException();

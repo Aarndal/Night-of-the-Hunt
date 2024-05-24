@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CirclingState : State
 {
+    public CirclingState(Wolf wolf) : base(wolf)
+    {
+    }
+
     public override void Enter()
     {
         throw new System.NotImplementedException();

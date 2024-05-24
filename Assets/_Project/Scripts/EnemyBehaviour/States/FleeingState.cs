@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class FleeingState : State
 {
+    public FleeingState(Wolf wolf) : base(wolf)
+    {
+    }
+
     public override void Enter()
     {
         throw new System.NotImplementedException();
