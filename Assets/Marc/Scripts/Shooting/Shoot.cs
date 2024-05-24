@@ -25,7 +25,7 @@ public class Shoot : MonoBehaviour
 
     private void Update()
     {
-        //  Crosshair Location and visibilitys
+        //  Crosshair Location and visibilityss
         this.Crosshair.transform.position = Input.mousePosition;
         
         this.Crosshair.SetActive(GetComponent<StonePossession>().HasStone());
