@@ -25,9 +25,7 @@ public class Shoot : MonoBehaviour
 
     private void Update()
     {
-        this.MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log(this.MousePosition);
-        this.Crosshair.transform.position = Camera.main.ScreenToWorldPoint(this.MousePosition);
+        this.Crosshair.transform.position = Input.mousePosition;
         
         this.Crosshair.SetActive(GetComponent<StonePossession>().HasStone());
     }
