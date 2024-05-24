@@ -8,7 +8,6 @@ public class ItemPickUp : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Piep");
-        if (other.TryGetComponent(out ICollectable collectable)) collectable.Collect(other);
+        if (other.TryGetComponent(out ICollectable collectable)) collectable.Collect(this.GetComponent<PolygonCollider2D>());
     }
 }

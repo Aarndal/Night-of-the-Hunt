@@ -11,10 +11,13 @@ namespace _Project.Scripts.Items
 
         public void Collect(Collider2D collector)
         {
+            Debug.Log("Puzzle Piece Collected");
             if (collector.CompareTag("Player") == false) return;
             
             collector.GetComponent<PuzzlePossession>().AddPuzzlePiece();
             OnCollect?.Invoke(this.gameObject);
+
+            
             
             Destroy(this.gameObject);
         }
