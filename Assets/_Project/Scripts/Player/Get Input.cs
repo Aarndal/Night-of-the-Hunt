@@ -25,37 +25,16 @@ public class GetInput : MonoBehaviour
 
     public void OnSprint(InputAction.CallbackContext _context)
     {
-        if(_context.performed)
-        {
-            isSprinting = true;
-        }
-        if(_context.canceled)
-        {
-            isSprinting = false;
-        }
+        this.isSprinting = _context.performed;
     }
 
     public void OnShoot(InputAction.CallbackContext _context)
     {
-        if(_context.performed)
-        {
-            isShooting = true;
-        }
-        if(_context.canceled)
-        {
-            isShooting = false;
-        }
+        this.isShooting = _context.performed;
     }
 
     public void OnDrink(InputAction.CallbackContext _context)
     {
-        if (_context.performed)
-        {
-            isDrinking = true;
-        }
-        if (_context.canceled)
-        {
-            isDrinking = false;
-        }
+        this.isDrinking = _context.performed;
     }
 }

@@ -32,8 +32,11 @@ public class Movement : MonoBehaviour
     [Space(5)] [Tooltip("How fast you want to decrease the stamina while sprinting")] [SerializeField]
     private float decreaseStamina;
 
+    private float IncreaseStaminaStanding = 2;
+    private float IncreaseStaminaWalking = 3;
+    
     [Space(5)] [Tooltip("How fast you want to increase the stamina after sprinting")] [SerializeField]
-    private float increaseStamina;
+    private float IncreaseStaminaFactor;
 
     [Space(5)] [Tooltip("How much stamina the wine regenerate")] [SerializeField]
     private float wineInfluence;
@@ -60,7 +63,7 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         if (myInput.getInput) Walk();
-        else IncreaseStamina();
+        else IncreaseStamina(this.IncreaseStaminaStanding * this.IncreaseStaminaFactor);
     }
 
     /// <summary>
@@ -69,7 +72,8 @@ public class Movement : MonoBehaviour
     private void Walk()
     {
         Vector2 moveDirection = new Vector2(myInput.movement.x, myInput.movement.y);
-
+        this.RotationSpeed = 5;
+        
         GetComponent<SpriteRenderer>().sprite = moveDirection.y switch
         {
             > 0 => this.CharacterSprites[1],
@@ -78,29 +82,27 @@ public class Movement : MonoBehaviour
             0 when moveDirection.x < 0 => this.CharacterSprites[3],
             _ => GetComponent<SpriteRenderer>().sprite
         };
-        this.RotationSpeed = 5;
 
+        moveDirection = Vector2.right * myInput.movement.x + Vector2.up * myInput.movement.y;
+        
         if (!myInput.isSprinting || stamina <= 0.0f)
         {
             myInput.isSprinting = false; // if its not set false -> player can sprint all the time
 
-            moveDirection = Vector2.right * myInput.movement.x + Vector2.up * myInput.movement.y;
             myRigid.velocity = moveDirection * (this.normalSpeed * Time.deltaTime);
-
-            IncreaseStamina();
         }
 
         if (myInput.isSprinting && stamina > 0.0f)
         {
             this.RotationSpeed = 10;
 
-            moveDirection = Vector2.right * myInput.movement.x + Vector2.up * myInput.movement.y;
             myRigid.velocity = moveDirection * (this.sprintSpeed * Time.deltaTime);
-
-            DecreaseStamina();
         }
 
+        if (this.myInput.isSprinting) DecreaseStamina();
+        else IncreaseStamina(this.IncreaseStaminaWalking * this.IncreaseStaminaFactor);
 
+        // The Rotation Animation
         float rotation = Mathf.Sin(Time.time * this.RotationSpeed) * this.Amplitude;
         transform.rotation = Quaternion.Euler(0, 0, rotation);
     }
@@ -110,10 +112,10 @@ public class Movement : MonoBehaviour
     /// <summary>
     /// increase stamina while walking or while standing ( regenerate stamina while standing is possible cause myinput.getInput is after fist input never false again ( it is not supposed to be like this, but not relevant ))
     /// </summary>
-    private void IncreaseStamina()
+    private void IncreaseStamina(float increaseStamina)
     {
         stamina = Mathf.Clamp(stamina + (increaseStamina * Time.deltaTime), 0.0f, maxStamina);
-        myImage.fillAmount += 0.1f * stamina;
+        this.myImage.fillAmount = (1 / this.maxStamina) * this.stamina;
     }
 
 
@@ -124,7 +126,7 @@ public class Movement : MonoBehaviour
     private void DecreaseStamina()
     {
         stamina = Mathf.Clamp(stamina - (decreaseStamina * Time.deltaTime), 0.0f, maxStamina);
-        myImage.fillAmount -= 0.1f * stamina;
+        this.myImage.fillAmount = (1 / this.maxStamina) * this.stamina;
     }
 
     private void GetStamina()
