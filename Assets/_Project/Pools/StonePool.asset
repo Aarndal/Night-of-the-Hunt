@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: StonePool
   m_EditorClassIdentifier: 
   StonePrefab: {fileID: 6310468835056681055, guid: af70091efcf2ecb6e8f17c471eedbf71, type: 3}
+  IsReusable: 0

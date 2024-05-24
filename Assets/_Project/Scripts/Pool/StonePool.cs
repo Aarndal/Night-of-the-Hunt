@@ -11,6 +11,8 @@ namespace _Project.Scripts.Items
     {
         [SerializeField] private GameObject StonePrefab;
         private readonly Stack<GameObject> StonePoolStack = new Stack<GameObject>();
+        
+        [SerializeField] private bool IsReusable = false;
 
         /// <summary>
         ///  The pool is initialized with the given number of stones.
@@ -25,7 +27,7 @@ namespace _Project.Scripts.Items
                 this.StonePoolStack.Push(stone);
                 
                 // When the stone is collected, it is added back to the pool.
-                stone.GetComponent<ICollectable>().OnCollect += AddStone;
+                stone.GetComponent<ICollectable>().OnCollect += DisableStone;
             }
         }
 
@@ -43,15 +45,24 @@ namespace _Project.Scripts.Items
         }
         
         /// <summary>
+        /// Disable the Stone and add it back to the pool.
+        /// </summary>
+        /// <param name="stone"></param>
+        /// <param name="isReusable"></param>
+        private void DisableStone(GameObject stone)
+        {
+            stone.SetActive(false);
+            
+            if (this.IsReusable) AddStone(stone);
+        }
+        
+        /// <summary>
         /// When the stone is collected, it is added back to the pool.
         /// </summary>
         /// <param name="stone"></param>
         private void AddStone(GameObject stone)
         {
-            stone.SetActive(false);
             this.StonePoolStack.Push(stone);
         }
- 
-
     }
 }
