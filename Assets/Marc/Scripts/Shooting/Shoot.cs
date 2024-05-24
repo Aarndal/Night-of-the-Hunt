@@ -1,62 +1,55 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using _Project.Scripts.Player;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Shoot : MonoBehaviour
 {
-    [SerializeField] private GameObject bulletObject;
+    [SerializeField] private GameObject StoneObject;
+    [SerializeField] private GameObject Crosshair;
 
-    [Tooltip("How fast the stones should be")]
-    [SerializeField] private float shootSpeed;
+    private Vector3 MousePosition;
+
+    [Tooltip("How fast the stones should be")] [SerializeField]
+    private float shootSpeed;
 
     private GetInput myInput;
 
- 
-    private Vector3 mousePos; // Mouse Position, the way the stones are flying
-
-    private Camera mainCamera;
-
-    private int shootIndex = 0; // able to shoot if index = 0 so player cant spam
     private void Start()
     {
         myInput = GetComponent<GetInput>();
-
-        mainCamera = Camera.main;
     }
-
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            shootIndex = 0;
-        }
+        this.MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Debug.Log(this.MousePosition);
+        this.Crosshair.transform.position = Camera.main.ScreenToWorldPoint(this.MousePosition);
+        
+        this.Crosshair.SetActive(GetComponent<StonePossession>().HasStone());
     }
+
     private void FixedUpdate()
     {
-        if(myInput.isShooting == true)
+        if (myInput.isShooting)
         {
             ShootStone();
-        }     
+        }
     }
 
     private void ShootStone()
     {
-        if(shootIndex == 0)
-        {
-            mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            shootIndex = 1;
+        StonePossession stonePossession = GetComponent<StonePossession>();
 
-            GameObject tempStone = Instantiate(bulletObject, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
-            tempStone.SetActive(true);
+        if (!stonePossession.HasStone()) return;
+        
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            Rigidbody2D myRigid = tempStone.AddComponent<Rigidbody2D>();
-            myRigid.gravityScale = 0;
-
-
-            myRigid.velocity = mousePos * shootSpeed * Time.deltaTime;
-        }
-     
+        stonePossession.GetStone().GetComponent<Rigidbody2D>().velocity = mousePos * (this.shootSpeed * Time.deltaTime);
+        
+        stonePossession.RemoveStone();
     }
 }
