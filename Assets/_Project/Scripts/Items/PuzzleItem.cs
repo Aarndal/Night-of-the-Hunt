@@ -15,6 +15,8 @@ namespace _Project.Scripts.Items
             
             collector.GetComponent<PuzzlePossession>().AddPuzzlePiece();
             OnCollect?.Invoke(this.gameObject);
+
+            
             
             Destroy(this.gameObject);
         }
