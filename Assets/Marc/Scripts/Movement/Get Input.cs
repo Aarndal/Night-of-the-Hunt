@@ -20,14 +20,7 @@ public class GetInput : MonoBehaviour
     {
         movement = _context.ReadValue<Vector2>();
 
-        if(movement != null)
-        {
-            getInput = true;
-        }
-        else
-        {
-            getInput = false;
-        }
+        this.getInput = this.movement != Vector2.zero;
     }
 
     public void OnSprint(InputAction.CallbackContext _context)

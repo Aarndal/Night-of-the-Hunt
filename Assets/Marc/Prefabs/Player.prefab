@@ -322,7 +322,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 1112883093, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -358,6 +358,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2362708e41eaa469a0132d0f9ba028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterSprites:
+  - {fileID: 1112883093, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
+  - {fileID: -354517072, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
+  - {fileID: 2079342190, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
+  - {fileID: -665619911, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
   normalSpeed: 200
   sprintSpeed: 380
   stamina: 10
@@ -366,6 +371,8 @@ MonoBehaviour:
   increaseStamina: 2
   wineInfluence: 10
   myImage: {fileID: 6899785451772901316}
+  RotationSpeed: 5
+  Amplitude: 3
 --- !u!114 &4277064966719671697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +525,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 17
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -567,8 +574,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2, y: 2.9}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

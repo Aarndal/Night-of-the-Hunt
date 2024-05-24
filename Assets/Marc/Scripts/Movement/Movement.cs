@@ -1,51 +1,52 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 public class Movement : MonoBehaviour
 {
-    private GetInput myInput;  //Get Input through input system
+    [SerializeField] private Sprite[] CharacterSprites = new Sprite[4];
+
+    private GetInput myInput; //Get Input through input system
     private Rigidbody2D myRigid; // Rigidbody of player 
 
 
-    [Tooltip("Normal walk speed")]
-    [SerializeField] private float normalSpeed;
+    [Tooltip("Normal walk speed")] [SerializeField]
+    private float normalSpeed;
 
-    [Space(5)]
-    [Tooltip("Sprint speed")]
-    [SerializeField] private float sprintSpeed;
+    [Space(5)] [Tooltip("Sprint speed")] [SerializeField]
+    private float sprintSpeed;
 
     #region Stamina
 
-    [Space(5)]
-    [Tooltip("How much stamina the player has")]
-    [SerializeField] private float stamina;
+    [Space(5)] [Tooltip("How much stamina the player has")] [SerializeField]
+    private float stamina;
 
-    [Space(5)]
-    [Tooltip("Limiter of max stamina ( player cant have more than maxStamina")]
-    [SerializeField] private float maxStamina;
+    [Space(5)] [Tooltip("Limiter of max stamina ( player cant have more than maxStamina")] [SerializeField]
+    private float maxStamina;
 
-    [Space(5)]
-    [Tooltip("How fast you want to decrease the stamina while sprinting")]
-    [SerializeField] private float decreaseStamina;
+    [Space(5)] [Tooltip("How fast you want to decrease the stamina while sprinting")] [SerializeField]
+    private float decreaseStamina;
 
-    [Space(5)]
-    [Tooltip("How fast you want to increase the stamina after sprinting")]
-    [SerializeField] private float increaseStamina;
+    [Space(5)] [Tooltip("How fast you want to increase the stamina after sprinting")] [SerializeField]
+    private float increaseStamina;
 
-    [Space(5)]
-    [Tooltip("How much stamina the wine regenerate")]
-    [SerializeField] private float wineInfluence;
+    [Space(5)] [Tooltip("How much stamina the wine regenerate")] [SerializeField]
+    private float wineInfluence;
 
 
 
-    [Space(5)]
-    [Tooltip("Stamina circle")]
-    [SerializeField] private Image myImage;
+    [Space(5)] [Tooltip("Stamina circle")] [SerializeField]
+    private Image myImage;
+
     #endregion
+
+    [SerializeField] private float RotationSpeed = 5;
+    [SerializeField] private float Amplitude = 3f;
 
 
     private void Start()
@@ -58,10 +59,8 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (myInput.getInput == true)
-        {
-            Walk();
-        }
+        if (myInput.getInput) Walk();
+        else IncreaseStamina();
     }
 
     /// <summary>
@@ -71,25 +70,39 @@ public class Movement : MonoBehaviour
     {
         Vector2 moveDirection = new Vector2(myInput.movement.x, myInput.movement.y);
 
-        if (myInput.isSprinting == false || stamina <= 0.0f)
+        GetComponent<SpriteRenderer>().sprite = moveDirection.y switch
+        {
+            > 0 => this.CharacterSprites[1],
+            < 0 => this.CharacterSprites[0],
+            0 when moveDirection.x > 0 => this.CharacterSprites[2],
+            0 when moveDirection.x < 0 => this.CharacterSprites[3],
+            _ => GetComponent<SpriteRenderer>().sprite
+        };
+        this.RotationSpeed = 5;
+
+        if (!myInput.isSprinting || stamina <= 0.0f)
         {
             myInput.isSprinting = false; // if its not set false -> player can sprint all the time
 
-            moveDirection = transform.right * myInput.movement.x + transform.up * myInput.movement.y;
-            myRigid.velocity = moveDirection * normalSpeed * Time.deltaTime;
-
+            moveDirection = Vector2.right * myInput.movement.x + Vector2.up * myInput.movement.y;
+            myRigid.velocity = moveDirection * (this.normalSpeed * Time.deltaTime);
 
             IncreaseStamina();
         }
 
-        if (myInput.isSprinting == true && stamina > 0.0f)
+        if (myInput.isSprinting && stamina > 0.0f)
         {
-            moveDirection = transform.right * myInput.movement.x + transform.up * myInput.movement.y;
-            myRigid.velocity = moveDirection * sprintSpeed * Time.deltaTime;
+            this.RotationSpeed = 10;
+
+            moveDirection = Vector2.right * myInput.movement.x + Vector2.up * myInput.movement.y;
+            myRigid.velocity = moveDirection * (this.sprintSpeed * Time.deltaTime);
 
             DecreaseStamina();
         }
 
+
+        float rotation = Mathf.Sin(Time.time * this.RotationSpeed) * this.Amplitude;
+        transform.rotation = Quaternion.Euler(0, 0, rotation);
     }
 
 
@@ -101,7 +114,6 @@ public class Movement : MonoBehaviour
     {
         stamina = Mathf.Clamp(stamina + (increaseStamina * Time.deltaTime), 0.0f, maxStamina);
         myImage.fillAmount += 0.1f * stamina;
-
     }
 
 
