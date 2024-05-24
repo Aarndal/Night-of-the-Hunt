@@ -710,78 +710,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2404540109736462149, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_LinearDrag
-      value: 17
-      objectReference: {fileID: 0}
     - target: {fileID: 3705610341617337424, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4277064966719671697, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites
-      value: 
-      objectReference: {fileID: 1112883093, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 4277064966719671697, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 1112883093, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 4277064966719671697, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: -354517072, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 4277064966719671697, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 2079342190, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 4277064966719671697, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: -665619911, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 5177722956212041361, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2
+    - target: {fileID: 9011248170814422616, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5177722956212041361, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.9
+    - target: {fileID: 9011248170814422616, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
       objectReference: {fileID: 0}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: Amplitude
-      value: 3
+    - target: {fileID: 9011248170814422616, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: RotationSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 1112883093, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: -354517072, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 2079342190, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: -665619911, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: CharacterSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 1112883093, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
-    - target: {fileID: 6278784374427715759, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1112883093, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
