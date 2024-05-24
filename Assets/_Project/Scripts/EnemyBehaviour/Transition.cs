@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Transition
+public class Transition
 {
     private Func<bool> _condition;
     private State _targetState;

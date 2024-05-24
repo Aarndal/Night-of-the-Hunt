@@ -2,28 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FSMEnemy : MonoBehaviour
+public class FSMEnemy
 {
     private State _currentState;
     private Dictionary<State, List<Transition>> _transitions;
-
-    public FSMEnemy(State startState, Dictionary<State, List<Transition>> transitions)
+    private Wolf _entity;
+    
+    public FSMEnemy(Wolf entity, State initialState, Dictionary<State, List<Transition>> transitions)
     {
-        _currentState = startState;
+        _entity = entity;
+        _currentState = initialState;
         _transitions = transitions;
     }
 
     public void UpdateState()
     {
-        State nextState = GetNextState();
+        State targetState = GetTargetState();
 
-        if (nextState != null)
-            SwitchState(nextState);
+        if (targetState != null)
+            SwitchState(targetState);
 
         _currentState.Execute();
     }
 
-    private State GetNextState()
+    private State GetTargetState()
     {
         List<Transition> currentTransitions = _transitions[_currentState]; // Get the list of transitions for the current state.
 

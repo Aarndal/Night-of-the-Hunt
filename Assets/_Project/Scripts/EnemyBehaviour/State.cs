@@ -2,14 +2,7 @@
 
 public abstract class State
 {
-    //protected Entity _entity;
-
-    //protected State(Entity entity)
-    //{
-    //    _entity = entity;
-    //}
-
-    public virtual void Enter() { }
-    public virtual void Execute() { }
-    public virtual void Exit() { }
+    public abstract void Enter();
+    public abstract void Execute();
+    public abstract void Exit();
 }

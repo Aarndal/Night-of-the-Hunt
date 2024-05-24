@@ -1076,6 +1076,12 @@ MonoBehaviour:
     loadInEditor: 1
     loadMethod: 1
   - scene:
+      editorAssetGUID: c456c331fced6d742a9f9e215809bf87
+      name: Enemies
+      _path: Assets/_Project/Scenes/Enemies.unity
+    loadInEditor: 1
+    loadMethod: 1
+  - scene:
       editorAssetGUID: b88d1f2379412db4b9dbe9476c3a3446
       name: PlayerCharacter
       _path: Assets/_Project/Scenes/PlayerCharacter.unity
