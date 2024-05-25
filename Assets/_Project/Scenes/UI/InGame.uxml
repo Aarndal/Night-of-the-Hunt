@@ -2,8 +2,8 @@
     <Style src="project://database/Assets/UI%20Toolkit/InGameStyleSheet.uss?fileID=7433441132597879392&amp;guid=f09cce68b854b513399ea14c1b3eb580&amp;type=3#InGameStyleSheet" />
     <ui:VisualElement name="Game" style="flex-grow: 1; flex-direction: row;">
         <ui:VisualElement name="LeftSide" style="flex-grow: 1; left: 0;">
-            <ui:VisualElement name="MiniMapBorder" style="width: 30%; height: 30%;">
-                <ui:VisualElement name="MiniMapContent" style="left: 0; top: 0; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/MiniMap/MiniMapRenderer.renderTexture?fileID=8400000&amp;guid=1cff08fd7af07db29a3f9efdfde3c315&amp;type=2#MiniMapRenderer&quot;); -unity-background-scale-mode: scale-to-fit; margin-top: -45px; margin-right: -45px; margin-bottom: -45px; margin-left: -45px;" />
+            <ui:VisualElement name="MiniMapContent" style="left: 0; top: 0; width: 187px; height: 245px; background-image: url(&quot;project://database/Assets/_Project/Art/UI/MiniMap/MiniMapRenderer.renderTexture?fileID=8400000&amp;guid=1cff08fd7af07db29a3f9efdfde3c315&amp;type=2#MiniMapRenderer&quot;); -unity-background-scale-mode: scale-to-fit; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; position: absolute; overflow: visible; opacity: 1;">
+                <ui:VisualElement name="MiniMapBorder" style="width: 130%; height: 11422%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/MiniMap/Minimap_Frame.png?fileID=21300000&amp;guid=f1ecafabafa18314c8ea0ccadcdc6cc3&amp;type=3#Minimap_Frame&quot;); margin-top: -20px; margin-right: -46px; margin-bottom: -29px; margin-left: -48px;" />
             </ui:VisualElement>
             <ui:VisualElement name="VisualElement" style="flex-grow: 1; width: 124px; height: 800px;" />
         </ui:VisualElement>

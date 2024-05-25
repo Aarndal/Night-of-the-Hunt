@@ -3,40 +3,35 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Wine : MonoBehaviour
 {
-    public static event Action myEvent; // starts event that increase the stamina of the player 
+    public static event Action RefreshStaminaEvent; // starts event that increase the stamina of the player 
 
     [Tooltip("is the index ( UI ) of the wine")]
     [SerializeField] private TextMeshProUGUI myText;
 
     [Tooltip("How many wines the player can drink")]
-    [SerializeField] private int wineIndex;
+    [SerializeField] private int RemainingWine;
     
     private GetInput myInput;
 
     private void Start()
     {
         myInput = GetComponent<GetInput>();
-        myText.text += wineIndex;
+        this.myText.text = Convert.ToString(this.RemainingWine);
+        
+        this.myInput.DrinkEvent += Drink;
     }
-    private void FixedUpdate()
-    {
-        if(myInput.isDrinking == true && wineIndex > 0)
-        { 
-            Drink();
-        }
-    }
-
 
     private void Drink()
     {
-        wineIndex--;
+        if (this.RemainingWine <= 0) return;
+        
+        this.RemainingWine--;
 
-        myText.text = "";
-        myText.text += wineIndex;
-
-        myEvent?.Invoke();
+        this.myText.text = Convert.ToString(this.RemainingWine);
+        RefreshStaminaEvent?.Invoke();
     }
 }
