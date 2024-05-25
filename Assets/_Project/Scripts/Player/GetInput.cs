@@ -1,9 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
 public class GetInput : MonoBehaviour
 {
@@ -15,6 +12,8 @@ public class GetInput : MonoBehaviour
 
     public event Action ShootEvent;
     public event Action DrinkEvent;
+    
+    public event Action DropMeatPieEvent;
 
     private void Start()
     {
@@ -27,6 +26,7 @@ public class GetInput : MonoBehaviour
         
         playerInput.actions["Shoot"].started += ctx => this.ShootEvent?.Invoke();
         playerInput.actions["Drink"].started += ctx => this.DrinkEvent?.Invoke();
+        playerInput.actions["DropMeatPie"].started += ctx => this.DropMeatPieEvent?.Invoke();
     }
 
     public void OnMove(InputAction.CallbackContext _context)
