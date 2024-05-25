@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Billboard
-  m_Shader: {fileID: -6465566751694194690, guid: d11413f01f598e3429e032075d21d30e, type: 3}
+  m_Shader: {fileID: 4800000, guid: a3df58c6f6b77bc4687d6f0d2b152475, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
