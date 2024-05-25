@@ -28,14 +28,14 @@ namespace _Project.Scripts.Items
             if (!(this.Timer > this.TimeToSpawn)) return;
             this.Timer = 0.0f;
             
-            Vector3 randomPosition = new Vector3(Random.Range(-this.SpawnRadius, this.SpawnRadius), 0, Random.Range(-this.SpawnRadius, this.SpawnRadius));
+            Vector3 randomPosition = new Vector3(Random.Range(-this.SpawnRadius, this.SpawnRadius), Random.Range(-this.SpawnRadius, this.SpawnRadius), 0);
             this.StonePool.SpawnStone(randomPosition);
         }
 
         void OnDrawGizmosSelected()
         {
             Handles.color = Color.cyan;
-            Handles.DrawWireArc(this.transform.position, Vector3.up, Vector3.forward, 360, this.SpawnRadius);
+            Handles.DrawWireArc(this.transform.position, Vector3.forward, Vector3.up, 360, this.SpawnRadius);
 
         }
     }
