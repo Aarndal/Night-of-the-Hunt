@@ -8,13 +8,11 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="RightSide" style="flex-grow: 1; right: 0;">
-            <ui:VisualElement name="HealthBarContainer" style="flex-grow: 1; top: 0; right: 0; position: absolute; width: 328px; height: 52px;">
-                <ui:SliderInt label="SliderInt" high-value="100" name="HealthBar" page-size="0" style="position: absolute; top: 0; right: 0; width: 100%; height: 100%;" />
-            </ui:VisualElement>
-            <ui:VisualElement name="MeatPiContainer" style="flex-grow: 1; height: 17%; position: absolute; top: 110px; right: 166px; width: 23%;">
+            <ui:VisualElement name="HealthBarContainer" style="top: 0; right: 0; position: absolute; width: 328px; height: 126px; overflow: hidden; opacity: 1;" />
+            <ui:VisualElement name="MeatPiContainer" style="flex-grow: 1; height: 13%; position: absolute; top: 150px; right: 22%; width: 19%;">
                 <ui:VisualElement name="MeatPieImage" style="flex-grow: 1; top: 0; right: 0; position: absolute; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/PieChart/Pie_chart_0_missing.png?fileID=21300000&amp;guid=2debca46014b8388cbe6c1663a7ab26b&amp;type=3#Pie_chart_0_missing&quot;);" />
             </ui:VisualElement>
-            <ui:VisualElement name="WineContrainer" style="flex-grow: 1; width: 20%; height: 20%; top: 88px; right: 0; position: absolute;">
+            <ui:VisualElement name="WineContrainer" style="flex-grow: 1; width: 17%; height: 16%; top: 141px; right: 3%; position: absolute;">
                 <ui:VisualElement name="WineImage" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/WineBottle/WineBottle_00.png?fileID=21300000&amp;guid=821742317229a4d489fe020102e0b511&amp;type=3#WineBottle_00&quot;);" />
             </ui:VisualElement>
         </ui:VisualElement>
