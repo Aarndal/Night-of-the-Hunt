@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour
         myInput = GetComponent<GetInput>();
         myRigid = GetComponent<Rigidbody2D>();
 
-        Wine.myEvent += GetStamina;
+        Wine.RefreshStaminaEvent += GetStamina;
     }
 
     private void FixedUpdate()

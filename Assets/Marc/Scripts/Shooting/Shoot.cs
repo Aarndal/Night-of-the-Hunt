@@ -16,29 +16,16 @@ public class Shoot : MonoBehaviour
     private void Start()
     {
         myInput = GetComponent<GetInput>();
+        
+        this.myInput.ShootEvent += ShootStone;
     }
 
     private void Update()
     {
-        
-        
-        
         //  Crosshair Location and visibilityss
         this.Crosshair.transform.position = Input.mousePosition;
         
         this.Crosshair.SetActive(GetComponent<StonePossession>().HasStone());
-    }
-
-    private void FixedUpdate()
-    {
-        Vector3 screenPos = Input.mousePosition;
-        screenPos.z = -Camera.main.transform.position.z;
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(screenPos);
-        
-        if (myInput.isShooting)
-        {
-            ShootStone();
-        }
     }
 
     private void ShootStone()

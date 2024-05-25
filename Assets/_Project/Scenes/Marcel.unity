@@ -553,7 +553,7 @@ Transform:
   m_GameObject: {fileID: 1638253611}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -14.29}
+  m_LocalPosition: {x: 0, y: 0, z: -8.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -786,6 +786,14 @@ PrefabInstance:
     - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
       propertyPath: IncreaseStaminaFactor
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250573229328176383, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: RemainingWine
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_NotificationBehavior
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
       propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.size

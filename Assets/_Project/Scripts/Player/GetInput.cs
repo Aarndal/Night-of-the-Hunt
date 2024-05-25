@@ -13,9 +13,8 @@ public class GetInput : MonoBehaviour
      
     public bool isSprinting = false;  // Movement script
 
-    public bool isShooting = false;  // Shoot script
-
-    public bool isDrinking = false;
+    public event Action ShootEvent;
+    public event Action DrinkEvent;
 
     private void Start()
     {
@@ -25,10 +24,9 @@ public class GetInput : MonoBehaviour
         
         playerInput.actions["Sprint"].started += ctx => this.isSprinting = true;
         playerInput.actions["Sprint"].canceled += ctx => this.isSprinting = false;
-        playerInput.actions["Shoot"].started += ctx => this.isShooting = true;
-        playerInput.actions["Shoot"].canceled += ctx => this.isShooting = false;
-        playerInput.actions["Drink"].started += ctx => this.isDrinking = true;
-        playerInput.actions["Drink"].canceled += ctx => this.isDrinking = false;
+        
+        playerInput.actions["Shoot"].started += ctx => this.ShootEvent?.Invoke();
+        playerInput.actions["Drink"].started += ctx => this.DrinkEvent?.Invoke();
     }
 
     public void OnMove(InputAction.CallbackContext _context)
