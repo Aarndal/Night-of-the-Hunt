@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Wine : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class Wine : MonoBehaviour
 
     private void Start()
     {
+        
+        
         myInput = GetComponent<GetInput>();
         myText.text += wineIndex;
     }
