@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 2997631607975239779}
   - component: {fileID: 2098233205298870554}
   - component: {fileID: 3723650604707464389}
+  - component: {fileID: 9049225849117288315}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -421,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 6808658363508304809}
-  RemainingWine: 0
+  RemainingWine: 4
 --- !u!114 &8097499196967124057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,7 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 8cead4fd2d0c982488e5af1510d0b68c, type: 3}
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -449,7 +450,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 494699601700105938}
         m_TargetAssemblyTypeName: GetInput, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -465,7 +466,7 @@ MonoBehaviour:
     m_ActionName: Movement/Walk[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 494699601700105938}
         m_TargetAssemblyTypeName: GetInput, Assembly-CSharp
         m_MethodName: OnSprint
         m_Mode: 0
@@ -481,7 +482,7 @@ MonoBehaviour:
     m_ActionName: Movement/Sprint[/Keyboard/shift]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 494699601700105938}
         m_TargetAssemblyTypeName: GetInput, Assembly-CSharp
         m_MethodName: OnShoot
         m_Mode: 0
@@ -497,7 +498,7 @@ MonoBehaviour:
     m_ActionName: Movement/Shoot Two[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 494699601700105938}
         m_TargetAssemblyTypeName: GetInput, Assembly-CSharp
         m_MethodName: OnDrink
         m_Mode: 0
@@ -660,6 +661,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StaminaBar: {fileID: 6568726704972038003}
+--- !u!114 &9049225849117288315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3705610341617337424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8bcc22b85e4a7e9c886357c4a466ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MeatPiePrefab: {fileID: 0}
 --- !u!1 &4590071809236000169
 GameObject:
   m_ObjectHideFlags: 0

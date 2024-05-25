@@ -192,17 +192,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
---- !u!114 &659703094 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6899785451772901316, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-  m_PrefabInstance: {fileID: 1871770833}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &776333047
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +270,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.4057, y: 9.4057, z: 9.4057}
+  m_LocalScale: {x: 41.662548, y: 41.662548, z: 41.662548}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -348,8 +337,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleSprites: []
-  MeatPieSprites: []
-  WineSprites: []
+  MeatPieSprites:
+  - {fileID: 21300000, guid: a986c91e92639c5aaa15144ee32d6766, type: 3}
+  - {fileID: 21300000, guid: 9c1278e43dbcf4a308abb1c96fa92669, type: 3}
+  - {fileID: 21300000, guid: 6bc119b4597f0037e9470552578e03d8, type: 3}
+  - {fileID: 21300000, guid: 37d416f9a1b9174b0ab8f5aa1d8de0ed, type: 3}
+  - {fileID: 21300000, guid: a5f06568b76280a6286240f39dbab79a, type: 3}
+  - {fileID: 21300000, guid: 95d666e906b89e0aca43ef4a8d3a7fb2, type: 3}
+  - {fileID: 21300000, guid: 77dbcef21bcc4d899a0f2939ea57b24d, type: 3}
+  - {fileID: 21300000, guid: dba118f50b06c79b09c0beee1bf8f4ed, type: 3}
+  - {fileID: 21300000, guid: 2debca46014b8388cbe6c1663a7ab26b, type: 3}
+  WineSprites:
+  - {fileID: 21300000, guid: 88a6772afa2fca248a92f793abdc4b26, type: 3}
+  - {fileID: 21300000, guid: 2c05c7de312cee942862f2ab57bc2e47, type: 3}
+  - {fileID: 21300000, guid: 64123f501c9e7fd409e9a8370b233e16, type: 3}
+  - {fileID: 21300000, guid: e293ee353b5eac247a25f057e0472f65, type: 3}
+  - {fileID: 21300000, guid: 821742317229a4d489fe020102e0b511, type: 3}
 --- !u!1 &965722946
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +492,7 @@ GameObject:
   - component: {fileID: 1638253613}
   - component: {fileID: 1638253612}
   - component: {fileID: 1638253615}
+  - component: {fileID: 1638253616}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -614,6 +618,20 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1638253616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638253611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7a245b63344ccfbe10626949826780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  offset: {x: 0, y: 0, z: -8.51}
 --- !u!1 &1813600614
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +643,7 @@ GameObject:
   - component: {fileID: 1813600618}
   - component: {fileID: 1813600617}
   - component: {fileID: 1813600615}
+  - component: {fileID: 1813600619}
   m_Layer: 0
   m_Name: MiniMapCamera
   m_TagString: Untagged
@@ -742,6 +761,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1813600619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813600614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7a245b63344ccfbe10626949826780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  offset: {x: 0, y: 0, z: -9.96}
 --- !u!1001 &1871770833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -794,106 +827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: StaminaImage
-      value: 
-      objectReference: {fileID: 659703094}
-    - target: {fileID: 6028405180417606840, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: IncreaseStaminaFactor
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6250573229328176383, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: RemainingWine
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_NotificationBehavior
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_DeviceRegainedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ControlsChangedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1871770835}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1871770835}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1871770835}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1871770835}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnMove
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnSprint
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnShoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8097499196967124057, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDrink
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
---- !u!114 &1871770835 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 494699601700105938, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
-  m_PrefabInstance: {fileID: 1871770833}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce35b8e992ff5c74599ce0e15bc16a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

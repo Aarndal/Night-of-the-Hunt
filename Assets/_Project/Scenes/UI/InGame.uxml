@@ -2,17 +2,20 @@
     <Style src="project://database/Assets/UI%20Toolkit/InGameStyleSheet.uss?fileID=7433441132597879392&amp;guid=f09cce68b854b513399ea14c1b3eb580&amp;type=3#InGameStyleSheet" />
     <ui:VisualElement name="Game" style="flex-grow: 1; flex-direction: row;">
         <ui:VisualElement name="LeftSide" style="flex-grow: 1; left: 0;">
-            <ui:VisualElement name="MiniMapContent" style="left: 0; top: 0; width: 187px; height: 245px; background-image: url(&quot;project://database/Assets/_Project/Art/UI/MiniMap/MiniMapRenderer.renderTexture?fileID=8400000&amp;guid=1cff08fd7af07db29a3f9efdfde3c315&amp;type=2#MiniMapRenderer&quot;); -unity-background-scale-mode: scale-to-fit; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; position: absolute; overflow: visible; opacity: 1;">
-                <ui:VisualElement name="MiniMapBorder" style="width: 130%; height: 11422%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/MiniMap/Minimap_Frame.png?fileID=21300000&amp;guid=f1ecafabafa18314c8ea0ccadcdc6cc3&amp;type=3#Minimap_Frame&quot;); margin-top: -20px; margin-right: -46px; margin-bottom: -29px; margin-left: -48px;" />
+            <ui:VisualElement name="MiniMapContainer" style="flex-grow: 1;">
+                <ui:VisualElement name="MiniMapContent" style="left: 63px; top: 37px; width: 284px; height: 314px; background-image: url(&quot;project://database/Assets/_Project/Art/UI/MiniMap/MiniMapRenderer.renderTexture?fileID=8400000&amp;guid=1cff08fd7af07db29a3f9efdfde3c315&amp;type=2#MiniMapRenderer&quot;); -unity-background-scale-mode: scale-to-fit; margin-top: -2px; margin-right: -2px; margin-bottom: -2px; margin-left: -2px; position: absolute; overflow: visible; opacity: 1; padding-left: 0;" />
+                <ui:VisualElement name="MiniMapBorder" style="width: 424px; height: 390px; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/MiniMap/Minimap_Frame.png?fileID=21300000&amp;guid=f1ecafabafa18314c8ea0ccadcdc6cc3&amp;type=3#Minimap_Frame&quot;); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; left: 0; top: 0; right: auto;" />
             </ui:VisualElement>
-            <ui:VisualElement name="VisualElement" style="flex-grow: 1; width: 124px; height: 800px;" />
         </ui:VisualElement>
         <ui:VisualElement name="RightSide" style="flex-grow: 1; right: 0;">
             <ui:VisualElement name="HealthBarContainer" style="flex-grow: 1; top: 0; right: 0; position: absolute; width: 328px; height: 52px;">
                 <ui:SliderInt label="SliderInt" high-value="100" name="HealthBar" page-size="0" style="position: absolute; top: 0; right: 0; width: 100%; height: 100%;" />
             </ui:VisualElement>
-            <ui:VisualElement name="MeatPiContainer" style="flex-grow: 1; height: auto; position: absolute; top: 100px; right: 0; width: auto;">
-                <ui:VisualElement style="flex-grow: 1; top: 0; right: 0; position: absolute; width: 100%; height: 100%;" />
+            <ui:VisualElement name="MeatPiContainer" style="flex-grow: 1; height: 17%; position: absolute; top: 110px; right: 166px; width: 23%;">
+                <ui:VisualElement name="MeatPieImage" style="flex-grow: 1; top: 0; right: 0; position: absolute; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/PieChart/Pie_chart_0_missing.png?fileID=21300000&amp;guid=2debca46014b8388cbe6c1663a7ab26b&amp;type=3#Pie_chart_0_missing&quot;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="WineContrainer" style="flex-grow: 1; width: 20%; height: 20%; top: 88px; right: 0; position: absolute;">
+                <ui:VisualElement name="WineImage" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/WineBottle/WineBottle_00.png?fileID=21300000&amp;guid=821742317229a4d489fe020102e0b511&amp;type=3#WineBottle_00&quot;);" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
