@@ -264,6 +264,14 @@ PrefabInstance:
       propertyPath: Amplitude
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6278784374427715759, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278784374427715759, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3598bf5a15f0a4949b90cec6355d46f3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -434,13 +442,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729513934}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
+  m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -1.7265091, y: -2.0064015, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -45, y: 0, z: 0}
 --- !u!114 &1729513936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,8 +564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7a245b63344ccfbe10626949826780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  offset: {x: -1.726509, y: -2.006402, z: -10}
+  player: {fileID: 2032645131}
+  offset: {x: 0, y: -3.5, z: -5}
 --- !u!1 &1784414991
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +632,11 @@ MonoBehaviour:
   _crossSceneReferences: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
+--- !u!4 &2032645131 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 538167667909802676, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+  m_PrefabInstance: {fileID: 877340389}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
