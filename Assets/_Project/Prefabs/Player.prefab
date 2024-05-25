@@ -363,8 +363,6 @@ MonoBehaviour:
   movement: {x: 0, y: 0}
   getInput: 0
   isSprinting: 0
-  isShooting: 0
-  isDrinking: 0
 --- !u!114 &6028405180417606840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,13 +382,17 @@ MonoBehaviour:
   - {fileID: -665619911, guid: 6e5f9102cf81d3147a25f384022c5b01, type: 3}
   normalSpeed: 200
   sprintSpeed: 380
-  stamina: 10
+  CurrentStamina: 10
   maxStamina: 10
-  decreaseStamina: 3
-  IncreaseStaminaFactor: 0
+  decreaseSprintingStamina: 3
+  IncreaseStaminaStanding: 2
+  IncreaseStaminaWalking: 3
+  IncreaseStaminaFactor: 0.3
   wineInfluence: 10
-  myImage: {fileID: 6899785451772901316}
+  StaminaImage: {fileID: 6899785451772901316}
   RotationSpeed: 5
+  RotationsSpeedWalking: 5
+  RotationSpeedSprinting: 10
   Amplitude: 3
 --- !u!114 &4377382780078135833
 MonoBehaviour:
@@ -404,7 +406,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2b048ea7b9ac742a0f0901b798292a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StoneObject: {fileID: 0}
   Crosshair: {fileID: 4590071809236000169}
   shootSpeed: 150
 --- !u!114 &6250573229328176383
@@ -420,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 6808658363508304809}
-  wineIndex: 3
+  RemainingWine: 0
 --- !u!114 &8097499196967124057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,7 +579,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2, y: 2.9}
+    oldSize: {x: 1, y: 1.45}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
