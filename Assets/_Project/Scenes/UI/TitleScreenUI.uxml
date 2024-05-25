@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="TitleBackground" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Project/Art/UI/TitleScreen/TitleScreen_Background.png?fileID=2800000&amp;guid=1589a327f497fe84981153c1fafb20ae&amp;type=3#TitleScreen_Background&quot;);">
+        <ui:VisualElement name="Info" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Project/Art/UI/TitleScreen/TitleScreen_Button.png?fileID=2800000&amp;guid=6d457c87c212e694d97c92451aaab083&amp;type=3#TitleScreen_Button&quot;); width: 23%; height: 9%; position: absolute; left: 40%; top: 76%; transform-origin: center; translate: 0 0; display: flex;" />
+    </ui:VisualElement>
+</ui:UXML>
