@@ -1,15 +1,15 @@
-﻿using static UnityEngine.EventSystems.EventTrigger;
-
-public abstract class State
+﻿using System;
+public class State
 {
-    protected Wolf _wolf;
+    public Action EnterActions;
+    public Action ExecuteActions;
+    public Action ExitActions;
+    public Transition[] Transitions;
 
-    public State(Wolf wolf)
+    public State(Action enter, Action execute, Action exit)
     {
-        _wolf = wolf;
+        EnterActions = enter;
+        ExecuteActions = execute;
+        ExitActions = exit;
     }
-    
-    public abstract void Enter();
-    public abstract void Execute();
-    public abstract void Exit();
 }

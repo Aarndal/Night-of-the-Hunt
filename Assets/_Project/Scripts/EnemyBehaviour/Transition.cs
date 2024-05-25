@@ -1,17 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class Transition
 {
-    private Func<bool> _condition;
+    private Condition _condition;
     private State _targetState;
-
-    public Func<bool> Condition => _condition;
+    private Action _actions;
     public State TargetState => _targetState;
+    public Action Actions => _actions;
+    public bool IsTriggered => _condition.Test();
 
-    public Transition(State targetState, Func<bool> condition)
+    public Transition(State targetState, Condition condition)
     {
         _targetState = targetState;
         _condition = condition;
