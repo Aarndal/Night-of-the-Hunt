@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,29 +13,26 @@ public class GetInput : MonoBehaviour
      
     public bool isSprinting = false;  // Movement script
 
-    public bool isShooting = false;  // Shoot script
+    public event Action ShootEvent;
+    public event Action DrinkEvent;
 
-    public bool isDrinking = false;
+    private void Start()
+    {
+        PlayerInput playerInput =  GetComponent<PlayerInput>();
+
+        playerInput.actions["Walk"].performed += OnMove;
+        
+        playerInput.actions["Sprint"].started += ctx => this.isSprinting = true;
+        playerInput.actions["Sprint"].canceled += ctx => this.isSprinting = false;
+        
+        playerInput.actions["Shoot"].started += ctx => this.ShootEvent?.Invoke();
+        playerInput.actions["Drink"].started += ctx => this.DrinkEvent?.Invoke();
+    }
 
     public void OnMove(InputAction.CallbackContext _context)
     {
         movement = _context.ReadValue<Vector2>();
 
         this.getInput = this.movement != Vector2.zero;
-    }
-
-    public void OnSprint(InputAction.CallbackContext _context)
-    {
-        this.isSprinting = _context.performed;
-    }
-
-    public void OnShoot(InputAction.CallbackContext _context)
-    {
-        this.isShooting = _context.performed;
-    }
-
-    public void OnDrink(InputAction.CallbackContext _context)
-    {
-        this.isDrinking = _context.performed;
     }
 }

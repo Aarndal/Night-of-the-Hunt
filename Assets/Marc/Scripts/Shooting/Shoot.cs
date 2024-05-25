@@ -1,18 +1,13 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using _Project.Scripts.Items;
 using _Project.Scripts.Player;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.InputSystem;
 
 public class Shoot : MonoBehaviour
 {
-    [SerializeField] private GameObject StoneObject;
     [SerializeField] private GameObject Crosshair;
-
-    private Vector3 MousePosition;
-
+    private GameObject StoneObject;
+    
     [Tooltip("How fast the stones should be")] [SerializeField]
     private float shootSpeed;
 
@@ -21,6 +16,8 @@ public class Shoot : MonoBehaviour
     private void Start()
     {
         myInput = GetComponent<GetInput>();
+        
+        this.myInput.ShootEvent += ShootStone;
     }
 
     private void Update()
@@ -31,24 +28,24 @@ public class Shoot : MonoBehaviour
         this.Crosshair.SetActive(GetComponent<StonePossession>().HasStone());
     }
 
-    private void FixedUpdate()
-    {
-        if (myInput.isShooting)
-        {
-            ShootStone();
-        }
-    }
-
     private void ShootStone()
     {
         StonePossession stonePossession = GetComponent<StonePossession>();
 
         if (!stonePossession.HasStone()) return;
         
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        stonePossession.GetStone().GetComponent<Rigidbody2D>().velocity = mousePos * (this.shootSpeed * Time.deltaTime);
+        Vector3 MousePOS = Mouse.current.position.ReadValue();
+        MousePOS.z = -Camera.main.transform.position.z;
+        Vector3 worldPos = Camera.main.ScreenToWorldPoint(MousePOS);
         
+        var stone = stonePossession.GetStone();
+        stone.SetActive(true);
+        
+        stone.transform.position = transform.position;
+        stone.GetComponent<Rigidbody2D>().velocity = (worldPos - transform.position) * (this.shootSpeed * Time.deltaTime);
+        
+        stone.GetComponent<StoneItem>().StartThrow();
         stonePossession.RemoveStone();
     }
+
 }
