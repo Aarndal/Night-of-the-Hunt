@@ -47,19 +47,10 @@ public class Shoot : MonoBehaviour
 
         if (!stonePossession.HasStone()) return;
         
-
-        //Vector3 screenPos = Input.mousePosition;
-        //screenPos.z = -Camera.main.transform.position.z;
-        //Vector3 worldPos = Camera.main.ScreenToWorldPoint(screenPos);
-        
-        
         Vector3 MousePOS = Mouse.current.position.ReadValue();
         MousePOS.z = -Camera.main.transform.position.z;
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(MousePOS);
         
-        //transform.position = worldPos;
-        
-
         var stone = stonePossession.GetStone();
         stone.SetActive(true);
         
