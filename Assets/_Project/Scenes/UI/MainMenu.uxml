@@ -10,7 +10,7 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="RightPage" style="flex-grow: 1; width: 50%;">
-            <ui:VisualElement name="CreditsPanel" style="flex-grow: 1; position: absolute; top: 100px; display: none;">
+            <ui:VisualElement name="CreditsPanel" focusable="false" style="flex-grow: 1; position: absolute; top: 100px; display: flex;">
                 <ui:Label tabindex="-1" text="Aaron Dahlhauser" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Aaron" class="CreditText" />
                 <ui:Label tabindex="-1" text="Alexander Solomko" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Alex" class="CreditText" />
                 <ui:Label tabindex="-1" text="Leonie Vidac" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Leonie" class="CreditText" />
@@ -19,7 +19,7 @@
                 <ui:VisualElement name="ClickUs" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Menu/ClickUs.png?fileID=21300000&amp;guid=1c87457e669fb1b2992b2fb01b1c28ad&amp;type=3#ClickUs&quot;); width: 38%; height: 40%; position: absolute; top: 150%; left: 70%;" />
                 <ui:VisualElement name="Arrow" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Menu/Arrow.png?fileID=2800000&amp;guid=f0c3628d35681b04b9f573a954bfb7e0&amp;type=3#Arrow&quot;); position: absolute; width: 10%; height: 187px; top: 100%; left: 100%;" />
             </ui:VisualElement>
-            <ui:VisualElement name="StartPanel" style="flex-grow: 1; position: absolute; background-image: url(&quot;project://database/Assets/_Project/Art/Environment/Hut_Complete/gro%C3%9Fmutterhaus.png?fileID=2800000&amp;guid=4d79a40ff7c44372380c789bead7c3bf&amp;type=3#großmutterhaus&quot;); width: 50%; height: 45%; top: 268px; left: 206px; display: none;" />
+            <ui:VisualElement name="StartPanel" style="flex-grow: 1; position: absolute; background-image: url(&quot;project://database/Assets/_Project/Art/Environment/Hut_Complete/gro%C3%9Fmutterhaus.png?fileID=2800000&amp;guid=4d79a40ff7c44372380c789bead7c3bf&amp;type=3#großmutterhaus&quot;); width: 50%; height: 45%; top: 264px; left: 174px; display: flex;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

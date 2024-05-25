@@ -18,6 +18,8 @@ namespace _Project.Scripts.UI
 
     public class MainMenuInteraction : MonoBehaviour
     {
+        private VisualElement root;
+        private VisualElement Background;
         private Button StartButton;
         private Button SettingsButton;
         private Button CreditsButton;
@@ -31,19 +33,22 @@ namespace _Project.Scripts.UI
         private Label Regina;
 
         private VisualElement StartPanel;
+        
+        private bool StartZoom = false;
 
         private void Awake()
         {
-            VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+            this.root = GetComponent<UIDocument>().rootVisualElement;
             this.StartButton = root.Q<Button>("StartButton");
             this.SettingsButton = root.Q<Button>("SettingsButton");
             this.CreditsButton = root.Q<Button>("CreditsButton");
             this.ExitButton = root.Q<Button>("QuitButton");
 
+            this.Background = root.Q<VisualElement>("BackGround");
             this.CreditsPanel = root.Q<VisualElement>("CreditsPanel");
             this.CreditsPanel.style.visibility = Visibility.Hidden;
             this.StartPanel = root.Q<VisualElement>("StartPanel");
-            this.StartPanel.style.visibility = Visibility.Visible;
+            this.StartPanel.style.visibility = Visibility.Hidden;
 
             this.Aaron = root.Q<Label>("Aaron");
             this.Alex = root.Q<Label>("Alex");
@@ -65,8 +70,11 @@ namespace _Project.Scripts.UI
 
         private void Update()
         {
-            VisualElement targetElement = this.StartPanel;
-            Vector2 targetPosition = this.StartPanel.transform.position; // Zielposition (z. B. in Pixeln)
+            if (this.StartZoom == false) return;
+            
+            VisualElement targetElement = this.Background;
+            //Vector2 targetPosition = this.StartPanel.transform.position; // Zielposition (z. B. in Pixeln)
+            Vector2 targetPosition = new Vector2(-1920, -1080); // Zielposition (z. B. in Pixeln)
             float zoomFactor = 2f; // Zoomfaktor
         
             // Berechnen Sie die neuen Transformationswerte
@@ -81,7 +89,16 @@ namespace _Project.Scripts.UI
         private void OnStartButtonClicked(ClickEvent evt)
         {
             Debug.Log("Start Button Clicked");
+            this.StartZoom = true;
+            this.CreditsPanel.style.visibility = Visibility.Hidden;
+            this.StartPanel.style.visibility = Visibility.Visible;
+            
+            
+            Invoke(nameof(StartGameLoad), 2.5f);
+        }
 
+        private void StartGameLoad()
+        {
             SceneLoader.Instance.LoadScene(EScene.GameScene);
         }
 
@@ -92,8 +109,6 @@ namespace _Project.Scripts.UI
 
         private void OnCreditsButtonClicked(ClickEvent evt)
         {
-            Debug.Log("Credits Button Clicked");
-
             this.CreditsPanel.style.visibility = Visibility.Visible;
             this.StartPanel.style.visibility = Visibility.Hidden;
         }
@@ -115,7 +130,7 @@ namespace _Project.Scripts.UI
                     Application.OpenURL("https://sihnor.github.io/");
                     break;
                 case EName.Regina:
-                    Application.OpenURL("www.google.com");
+                    Application.OpenURL("https://www.artstation.com/regina_poida");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(name), name, null);

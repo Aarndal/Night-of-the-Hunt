@@ -44,7 +44,7 @@ namespace _Project.Scripts.UI
                     break;
             }
             
-            this.waitTime -= Time.deltaTime;
+            if (this.waitTime >= 0) this.waitTime -= Time.deltaTime;
             if (this.waitTime >= 0) return;
 
             if (this.Info.style.opacity.value > 0.99f)
