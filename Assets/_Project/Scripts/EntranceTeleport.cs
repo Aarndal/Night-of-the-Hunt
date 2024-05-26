@@ -11,8 +11,6 @@ namespace _Project.Scripts
         {
             if (!other.CompareTag("Player")) return;
             
-            Debug.Log("Player entered the entrance");
-            
             Vector2 exitPosition = this.Exit.transform.position + new Vector3(0, -3, 0);   
             other.transform.position = exitPosition;
         }

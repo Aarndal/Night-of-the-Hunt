@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
 using _Project.Scripts.Player;
 using UnityEngine;
 using UnityEngine.UIElements;
-using Slider = UnityEngine.UI.Slider;
 
 namespace _Project.Scripts.UI
 {
