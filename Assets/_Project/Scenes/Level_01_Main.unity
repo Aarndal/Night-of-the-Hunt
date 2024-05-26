@@ -1572,6 +1572,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3365842763335615229, guid: ee45b229886127c4aaabea7e030e48c6, type: 3}
   m_PrefabInstance: {fileID: 60797884}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &62692231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894377404738750525, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5301938511599893711, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: m_Name
+      value: StoneSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396641061195509589, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: SpawnCount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396641061195509589, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: SpawnRadius
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396641061195509589, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
+      propertyPath: TimeToSpawn
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35ad2f4c9b24fa5f49413bec6fe38a3a, type: 3}
 --- !u!1001 &63052855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60528,4 +60597,5 @@ SceneRoots:
   - {fileID: 161091739}
   - {fileID: 336801339}
   - {fileID: 1859834111}
+  - {fileID: 62692231}
   - {fileID: 1813410592}
