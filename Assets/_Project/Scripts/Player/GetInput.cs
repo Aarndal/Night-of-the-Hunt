@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class GetInput : MonoBehaviour
 {
     public Vector2 movement;  // Movement script
+    public Vector2 aim; 
 
     public bool getInput = false;
      
@@ -20,6 +21,8 @@ public class GetInput : MonoBehaviour
         PlayerInput playerInput =  GetComponent<PlayerInput>();
 
         playerInput.actions["Walk"].performed += OnMove;
+        playerInput.actions["Aim"].performed += OnAim;
+        playerInput.actions["Aim"].canceled += ctx => { this.aim = Vector2.zero; };
         
         playerInput.actions["Sprint"].started += ctx => this.isSprinting = true;
         playerInput.actions["Sprint"].canceled += ctx => this.isSprinting = false;
@@ -34,5 +37,10 @@ public class GetInput : MonoBehaviour
         movement = _context.ReadValue<Vector2>();
 
         this.getInput = this.movement != Vector2.zero;
+    }
+    
+    public void OnAim(InputAction.CallbackContext _context)
+    {
+        this.aim = _context.ReadValue<Vector2>();
     }
 }

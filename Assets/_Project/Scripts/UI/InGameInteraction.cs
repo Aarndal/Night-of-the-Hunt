@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using _Project.Scripts.Player;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -7,12 +7,11 @@ namespace _Project.Scripts.UI
 {
     public class InGameInteraction : MonoBehaviour
     {
-        private VisualElement HeartBar;
-        private VisualElement Dragger;
-        private VisualElement Bar;
-        
-        private VisualElement PuzzleContainer;
         [SerializeField] private List<Sprite> PuzzleSprites;
+        private VisualElement PuzzleImageOne;
+        private VisualElement PuzzleImageTwo;
+        private VisualElement PuzzleImageThree;
+        private VisualElement PuzzleImagFour;
         private int CurrentPuzzleIndex;
         
         private VisualElement MeatPiImage;
@@ -31,53 +30,46 @@ namespace _Project.Scripts.UI
             this.CurrentWineIndex = this.WineSprites.Count - 1;
             
             VisualElement root = GetComponent<UIDocument>().rootVisualElement;
-            this.HeartBar = root.Q<VisualElement>("HealthBar");
-            this.Dragger = root.Q<VisualElement>("unity-dragger");
-            
             this.WineImage = root.Q<VisualElement>("WineImage");
             this.MeatPiImage = root.Q<VisualElement>("MeatPieImage");
+            this.PuzzleImageOne = root.Q<VisualElement>("PuzzleImageOne");
+            this.PuzzleImageOne.visible = false;
+            this.PuzzleImageTwo = root.Q<VisualElement>("PuzzleImageTwo");
+            this.PuzzleImageTwo.visible = false;
+            this.PuzzleImageThree = root.Q<VisualElement>("PuzzleImageThree");
+            this.PuzzleImageThree.visible = false;
+            this.PuzzleImagFour = root.Q<VisualElement>("PuzzleImageFour");
+            this.PuzzleImagFour.visible = false;
 
-
-            AddElements();
-            
             GameObject player = GameObject.FindWithTag("Player");
             GetInput input = player.GetComponent<GetInput>();
             
             input.DrinkEvent += DrinkWine;
             input.DropMeatPieEvent += DropMeatPie;
+            
+            player.GetComponent<PuzzlePossession>().OnPuzzleCollect += CollectPuzzle;
         }
 
-        private void AddElements()
-        {
-            this.Bar = new VisualElement();
-            this.Dragger.Add(this.Bar);
-            this.Bar.name = "Bar";
-            this.Bar.AddToClassList("bar");
-        }
-        
         private void CollectPuzzle()
         {
             if (this.CurrentPuzzleIndex >= this.PuzzleSprites.Count) return;
             
+            switch (this.CurrentPuzzleIndex)
+            {
+                case 0:
+                    this.PuzzleImageOne.visible = true;
+                    break;
+                case 1:
+                    this.PuzzleImageTwo.visible = true;
+                    break;
+                case 2:
+                    this.PuzzleImageThree.visible = true;
+                    break;
+                case 3:
+                    this.PuzzleImagFour.visible = true;
+                    break;
+            }
             this.CurrentPuzzleIndex++;
-        }
-        
-        private void LoosePieScore()
-        {
-            if (this.CurrentMeatPieIndex < 0) return;
-            
-            this.CurrentMeatPieIndex--;
-            
-            // Remove one Piece of the MeatPie
-        }
-        
-        private void LooseWineScore()
-        {
-            if (this.CurrentWineIndex < 0) return;
-            
-            this.CurrentWineIndex--;
-            
-            // Remove one Glass of Wine
         }
         
         private void DrinkWine()
