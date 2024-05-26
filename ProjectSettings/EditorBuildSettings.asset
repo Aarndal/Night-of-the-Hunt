@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/PlayerCharacter.unity
     guid: b88d1f2379412db4b9dbe9476c3a3446
+  - enabled: 1
+    path: Assets/_Project/Scenes/Enemies.unity
+    guid: c456c331fced6d742a9f9e215809bf87
   m_configObjects: {}

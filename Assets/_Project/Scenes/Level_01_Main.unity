@@ -11010,7 +11010,6 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3495519010882528890, guid: 802f6f1637d0b464da1f749de81d0654, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495519010882528890, guid: 802f6f1637d0b464da1f749de81d0654, type: 3}
@@ -44946,6 +44945,12 @@ MonoBehaviour:
       editorAssetGUID: cf11abd0674a6364eadbfa509d405153
       name: UI_Ingame
       _path: Assets/_Project/Scenes/UI_Ingame.unity
+    loadInEditor: 1
+    loadMethod: 1
+  - scene:
+      editorAssetGUID: c456c331fced6d742a9f9e215809bf87
+      name: Enemies
+      _path: Assets/_Project/Scenes/Enemies.unity
     loadInEditor: 1
     loadMethod: 1
   - scene:

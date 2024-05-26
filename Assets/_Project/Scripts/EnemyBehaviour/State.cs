@@ -1,15 +1,15 @@
-﻿using static UnityEngine.EventSystems.EventTrigger;
-
-public abstract class State
+﻿using System;
+public class State
 {
-    //protected Entity _entity;
+    public Action EnterActions;
+    public Action ExecuteActions;
+    public Action ExitActions;
+    public Transition[] Transitions;
 
-    //protected State(Entity entity)
-    //{
-    //    _entity = entity;
-    //}
-
-    public virtual void Enter() { }
-    public virtual void Execute() { }
-    public virtual void Exit() { }
+    public State(Action enter, Action execute, Action exit)
+    {
+        EnterActions = enter;
+        ExecuteActions = execute;
+        ExitActions = exit;
+    }
 }
