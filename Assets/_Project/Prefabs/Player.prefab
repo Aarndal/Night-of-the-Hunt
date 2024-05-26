@@ -156,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NegativeHealthBar: {fileID: 1544215311159243408}
   HealthValue: {fileID: 11400000, guid: d7ce889a32b575e73abc7a1af72d9516, type: 2}
+  MaxHealth: 100
 --- !u!1 &2896449800381340212
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8bcc22b85e4a7e9c886357c4a466ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MeatPiePrefab: {fileID: 0}
+  MeatPiePrefab: {fileID: 1234964707819406079, guid: aae9f1223793c763c93e98e4703a5055, type: 3}
 --- !u!1 &4521656135060756666
 GameObject:
   m_ObjectHideFlags: 0

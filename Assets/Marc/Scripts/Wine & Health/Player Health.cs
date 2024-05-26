@@ -28,7 +28,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void KillPlayer()
     {
-        Destroy(this.gameObject);
+        Debug.Log("Player is dead");
+        //Destroy(this.gameObject);
     }
 
     private void Update()
