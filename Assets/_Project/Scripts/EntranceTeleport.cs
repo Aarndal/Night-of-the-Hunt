@@ -13,7 +13,7 @@ namespace _Project.Scripts
             
             Debug.Log("Player entered the entrance");
             
-            Vector2 exitPosition = this.Exit.transform.position + new Vector3(0, -5, 0);   
+            Vector2 exitPosition = this.Exit.transform.position + new Vector3(0, -3, 0);   
             other.transform.position = exitPosition;
         }
     }

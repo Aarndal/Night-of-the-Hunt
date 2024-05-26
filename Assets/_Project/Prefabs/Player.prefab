@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 3348282440367925200}
   - component: {fileID: 268184382767849492}
   m_Layer: 0
-  m_Name: HealthStone
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -667,6 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8bcc22b85e4a7e9c886357c4a466ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RemainingMeatPie: 8
   MeatPiePrefab: {fileID: 1234964707819406079, guid: aae9f1223793c763c93e98e4703a5055, type: 3}
 --- !u!1 &4521656135060756666
 GameObject:
