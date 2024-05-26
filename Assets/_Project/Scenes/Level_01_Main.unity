@@ -11320,6 +11320,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2014154108}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.5
@@ -11362,13 +11366,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext (2)
+      value: Cave_Entrance9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &402042823 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 402042822}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &402284898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11558,6 +11573,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1185711357}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 73
@@ -11600,7 +11619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext (1)
+      value: Cave_Entrance5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11612,6 +11631,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
   m_PrefabInstance: {fileID: 411333966}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &411333968 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 411333966}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &416046373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20456,6 +20486,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2014154108}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.58
@@ -20498,13 +20532,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext
+      value: Cave_Entrance7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &763960612 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 763960611}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &767617970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34247,6 +34292,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2014154108}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 70.5
@@ -34289,13 +34338,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext (1)
+      value: Cave_Entrance8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &1237101483 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 1237101482}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1238065219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3642896010256633288, guid: fd3f6446a4eb798489836c1eba67fd3d, type: 3}
@@ -37132,6 +37192,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1756203650}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 97.5
@@ -37174,13 +37238,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext
+      value: Cave_Entrance1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &1350401345 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 1350401343}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1350514419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3365842763335615229, guid: ee45b229886127c4aaabea7e030e48c6, type: 3}
@@ -38520,6 +38595,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1185711357}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.9
@@ -38562,7 +38641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext
+      value: Cave_Entrance4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38574,6 +38653,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
   m_PrefabInstance: {fileID: 1401351025}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1401351027 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 1401351025}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1402491516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39876,6 +39966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1756203650}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.8
@@ -39918,13 +40012,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext (1)
+      value: Cave_Entrance2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &1446207358 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 1446207357}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1450663451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40694,6 +40799,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1185711357}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 73
@@ -40736,7 +40845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext (2)
+      value: Cave_Entrance6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40748,6 +40857,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
   m_PrefabInstance: {fileID: 1471185628}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1471185630 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 1471185628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1471619767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41978,6 +42098,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1756203650}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45
@@ -42020,13 +42144,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext (2)
+      value: Cave_Entrance3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &1519003948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 1519003947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1519026257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43111,6 +43246,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1244598986}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.2
@@ -43153,13 +43292,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext
+      value: Cave_Entrance10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &1538946946 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 1538946945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1540940785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6322963344416680710, guid: 5352968ff72b3e248b09b9f43b704d5d, type: 3}
@@ -45137,7 +45287,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621325858}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15cc1e8a133b04c4ba5d1c4801149eaa, type: 3}
   m_Name: 
@@ -45452,6 +45602,318 @@ MonoBehaviour:
       componentName: 
       componentIndex: 0
       editorLocalId: 144033784
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 402042823}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 00140b6c340698905bb9146e8c0fd402
+        name: Cave_09
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_09.unity
+      fullPath: /Cave_Exit9
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 698871476
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1519003948}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: fcd6cf5d0f02a69e8a357e2f4a4e40c1
+        name: Cave_03
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_03.unity
+      fullPath: /Cave_Exit3
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 97653482
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 763960612}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: eb70d0f2ae01c161fb73ea4fee801680
+        name: Cave_07
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_07.unity
+      fullPath: /Cave_Exit7
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 1083687628
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 2074345025}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c2016a978549245608b8bc8af8e61b70
+        name: Cave_11
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_11.unity
+      fullPath: /Cave_Exit11
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 1468103032
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1471185630}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 555c7c4efbfc7a487857fcc848a415ad
+        name: Cave_06
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_06.unity
+      fullPath: /Cave_Exit6
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 744780468
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1350401345}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: d47d0368b742bf7cda74b822ab24af05
+        name: Cave_01
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_01.unity
+      fullPath: /Cave_Exit1
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 2054781665
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 411333968}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 6bfc864bd3735b4b58e7e4d897fef4b6
+        name: Cave_05
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_05.unity
+      fullPath: /Cave_Exit5
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 121825728
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 2047119873}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 1b0935e24a1964f7fb0c0946763c9a71
+        name: Cave_12
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_12.unity
+      fullPath: /Cave_Exit12
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 681429731
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1237101483}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: fd3632bb44ecf82a6b56f73c66d2b794
+        name: Cave_08
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_08.unity
+      fullPath: /Cave_Exit8
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 1430996105
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1401351027}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: da7205647fd27b8d181b1a0b2fdac458
+        name: Cave_04
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_04.unity
+      fullPath: /Cave_Exit4
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 432906307
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1446207358}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: ae2ec4525a1dfb62e823fdb8eb7503cb
+        name: Cave_02
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_02.unity
+      fullPath: /Cave_Exit2
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 191704477
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1538946946}
+    _sourceField: Exit
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 1ccb5cf4c087b5665b7ad12dbe63f2c7
+        name: Cave_10
+        _path: Assets/_Project/Scenes/CaveScenes/Cave_10.unity
+      fullPath: /Cave_Exit10
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 45385582
       editorPrefabRelativePath: 
       version: 1
     _data:
@@ -58394,6 +58856,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1244598986}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.8
@@ -58436,13 +58902,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext (2)
+      value: Cave_Entrance12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &2047119873 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 2047119872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2048674624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59037,6 +59514,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1244598986}
     m_Modifications:
+    - target: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+      propertyPath: Exit
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4926045431749438555, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.2
@@ -59079,13 +59560,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737798902881479854, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
       propertyPath: m_Name
-      value: Cave_ext (1)
+      value: Cave_Entrance11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+--- !u!114 &2074345025 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174319652230507193, guid: e072e2f1e5937824fa8bc26c23406547, type: 3}
+  m_PrefabInstance: {fileID: 2074345024}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2076972676
 GameObject:
   m_ObjectHideFlags: 0
