@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4926045431749438555}
   - component: {fileID: 4879801838507399215}
   - component: {fileID: 6113618705424379815}
+  - component: {fileID: 1174319652230507193}
   m_Layer: 0
-  m_Name: Cave_ext
+  m_Name: Cave_Entrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.010124, y: 2.1411285}
   m_EdgeRadius: 0
+--- !u!114 &1174319652230507193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5737798902881479854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b7f919af7c4b029b9f26f46cc12ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Exit: {fileID: 0}

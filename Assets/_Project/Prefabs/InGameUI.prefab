@@ -61,7 +61,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3be1fb192e14c17a9b9f75a84552cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PuzzleSprites: []
+  PuzzleSprites:
+  - {fileID: 21300000, guid: 16fd6aa6c590c8fc68d5d5d1603dc09f, type: 3}
+  - {fileID: 21300000, guid: 1964d05a58d746a02a6a42df3aecf226, type: 3}
+  - {fileID: 21300000, guid: 9b539dda2ddf874898843bc5aefc5f04, type: 3}
+  - {fileID: 21300000, guid: 0be45e42391b0376cbe4501a92f416f4, type: 3}
   MeatPieSprites:
   - {fileID: 21300000, guid: a986c91e92639c5aaa15144ee32d6766, type: 3}
   - {fileID: 21300000, guid: 9c1278e43dbcf4a308abb1c96fa92669, type: 3}
