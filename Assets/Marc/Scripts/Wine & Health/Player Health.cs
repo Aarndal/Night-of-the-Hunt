@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using _Project.Scripts.Variables;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerHealth : MonoBehaviour
 {
     [Tooltip("Player health")]
     [SerializeField] private FloatVariable HealthValue;
     [SerializeField] private float MaxHealth = 100f;
+    
+    public event Action OnPlayerDeath; 
 
 
     private void Start()
@@ -28,8 +31,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void KillPlayer()
     {
-        Debug.Log("Player is dead");
-        //Destroy(this.gameObject);
+        GetComponent<PlayerInput>().enabled = false;
+        OnPlayerDeath?.Invoke();
+
+        Time.timeScale = 0;
     }
 
     private void Update()

@@ -48,8 +48,6 @@ namespace _Project.Scripts.UI
             input.DropMeatPieEvent += DropMeatPie;
             
             player.GetComponent<PuzzlePossession>().OnPuzzleCollect += CollectPuzzle;
-            
-
         }
 
         private void CollectPuzzle()

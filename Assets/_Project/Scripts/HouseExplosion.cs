@@ -96,13 +96,8 @@ namespace _Project.Scripts
         {
             if (other.CompareTag("Player") && this.LightHousePartFour.enabled)
             {
-                EnableEndGame();
+                other.GetComponent<PuzzlePossession>().Escape();
             }
-        }
-        
-        private void EnableEndGame()
-        {
-            Debug.Log("End Game");
         }
     }
 }
