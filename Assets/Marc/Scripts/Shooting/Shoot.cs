@@ -11,13 +11,11 @@ public class Shoot : MonoBehaviour
     [Tooltip("How fast the stones should be")] [SerializeField]
     private float shootSpeed;
 
-    private GetInput myInput;
-
     private void Start()
     {
-        myInput = GetComponent<GetInput>();
+        GetInput myInput = GetComponent<GetInput>();
         
-        this.myInput.ShootEvent += ShootStone;
+        myInput.ShootEvent += ShootStone;
     }
 
     private void Update()

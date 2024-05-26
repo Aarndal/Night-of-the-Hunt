@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "DropMeatPie",
+                    "type": "Button",
+                    "id": "690585fe-6bd2-477c-b61a-0b8d9464d5d8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -123,11 +132,22 @@
                 {
                     "name": "",
                     "id": "97b1b036-3634-454e-8686-f93d3dc11630",
-                    "path": "<Keyboard>/upArrow",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Drink",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "08b01f54-316f-4ff5-93c4-8bbea09d46a3",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropMeatPie",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

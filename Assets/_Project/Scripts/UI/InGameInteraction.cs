@@ -27,15 +27,24 @@ namespace _Project.Scripts.UI
         private void Start()
         {
             this.CurrentPuzzleIndex = 0;
-            this.CurrentMeatPieIndex = 8;
-            this.CurrentWineIndex = 4;
+            this.CurrentMeatPieIndex = this.MeatPieSprites.Count - 1;
+            this.CurrentWineIndex = this.WineSprites.Count - 1;
             
             VisualElement root = GetComponent<UIDocument>().rootVisualElement;
             this.HeartBar = root.Q<VisualElement>("HealthBar");
             this.Dragger = root.Q<VisualElement>("unity-dragger");
+            
+            this.WineImage = root.Q<VisualElement>("WineImage");
+            this.MeatPiImage = root.Q<VisualElement>("MeatPieImage");
 
 
             AddElements();
+            
+            GameObject player = GameObject.FindWithTag("Player");
+            GetInput input = player.GetComponent<GetInput>();
+            
+            input.DrinkEvent += DrinkWine;
+            input.DropMeatPieEvent += DropMeatPie;
         }
 
         private void AddElements()
@@ -69,6 +78,24 @@ namespace _Project.Scripts.UI
             this.CurrentWineIndex--;
             
             // Remove one Glass of Wine
+        }
+        
+        private void DrinkWine()
+        {
+            if (this.CurrentWineIndex <= 0) return;
+            
+            this.CurrentWineIndex--;
+            
+            this.WineImage.style.backgroundImage = new StyleBackground(this.WineSprites[this.CurrentWineIndex]);
+        }
+        
+        private void DropMeatPie()
+        {
+            if (this.CurrentMeatPieIndex <= 0) return;
+            
+            this.CurrentMeatPieIndex--;
+
+            this.MeatPiImage.style.backgroundImage = new StyleBackground(this.MeatPieSprites[this.CurrentMeatPieIndex]);
         }
     }
 }
