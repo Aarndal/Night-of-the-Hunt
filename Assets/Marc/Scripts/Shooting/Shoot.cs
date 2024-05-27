@@ -25,7 +25,7 @@ public class Shoot : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(GetComponent<GetInput>().aim);
+        //Debug.Log(GetComponent<GetInput>().aim);
         this.isControllerInput = GetComponent<GetInput>().aim != Vector2.zero;
         
         if (this.isControllerInput)

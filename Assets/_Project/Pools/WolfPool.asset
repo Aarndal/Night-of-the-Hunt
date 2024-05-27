@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d053d4a681bc99641b9a982c31798d94, type: 3}
+  m_Name: WolfPool
+  m_EditorClassIdentifier: 
+  _wolfPrefab: {fileID: 4787684236982343578, guid: a85c12dd32a464a4cbe43fd481ee94fb, type: 3}
