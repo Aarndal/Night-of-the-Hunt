@@ -20,10 +20,7 @@ MonoBehaviour:
       y: 0
       width: 100
       height: 100
-    contents:
-    - model: {fileID: 8926484042661614593}
-      id: 0
-      isStickyNote: 0
+    contents: []
   stickyNoteInfos: []
   categories: []
   uiBounds:
@@ -2160,7 +2157,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.AABox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":0.9232416152954102,"y":5.5110015869140629,"z":0.0},"size":{"x":25.398801803588868,"y":29.346031188964845,"z":1.0}}'
+      m_SerializableObject: '{"center":{"x":-8.00753402709961,"y":21.666107177734376,"z":0.0},"size":{"x":230.13739013671876,"y":221.57839965820313,"z":1.0}}'
     m_Space: 0
   m_Property:
     name: Box
@@ -2689,7 +2686,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.TSphere, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"transform":{"position":{"x":0.0,"y":0.35863685607910159,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":1.8267780542373658},"scale":{"x":1.0,"y":1.0,"z":1.0}},"radius":0.012697634287178517}'
+      m_SerializableObject: '{"transform":{"position":{"x":0.09171206504106522,"y":2.6223607063293459,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":1.8267780542373658},"scale":{"x":1.0,"y":1.0,"z":1.0}},"radius":0.012697634287178517}'
     m_Space: 0
   m_Property:
     name: sphere
