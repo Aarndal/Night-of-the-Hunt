@@ -44,6 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771ec0c6cd204deab504a14a4abd37f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlacesToSpawn: []
+  PlacesToSpawn:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   PuzzlePool: {fileID: 11400000, guid: 3609ba800b47cd3cc9867dbc4d6672f7, type: 2}
-  WolfPackPrefab: {fileID: 0}
+  WolfPackPrefab: {fileID: 4787684236982343578, guid: a85c12dd32a464a4cbe43fd481ee94fb, type: 3}

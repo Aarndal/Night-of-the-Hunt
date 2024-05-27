@@ -34,8 +34,8 @@ namespace _Project.Scripts.Items
 
         void OnDrawGizmosSelected()
         {
-            Handles.color = Color.cyan;
-            Handles.DrawWireArc(this.transform.position, Vector3.forward, Vector3.up, 360, this.SpawnRadius);
+            //Handles.color = Color.cyan;
+            //Handles.DrawWireArc(this.transform.position, Vector3.forward, Vector3.up, 360, this.SpawnRadius);
 
         }
     }

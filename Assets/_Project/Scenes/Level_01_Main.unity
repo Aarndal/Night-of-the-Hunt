@@ -49429,6 +49429,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1859834111}
     m_Modifications:
+    - target: {fileID: 540958112183128076, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 719174357670016577, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885391787495131189, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505801458566083786, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2113457423513286808, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2575270256532446866, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402607666354237790, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776745684985107637, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606730059018646128, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5069536561576605824, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.14
@@ -49469,6 +49505,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5482954611483656751, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5555621693696430333, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
       propertyPath: m_Size.x
       value: 4.1060276
@@ -49485,9 +49525,17 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.0153923035
       objectReference: {fileID: 0}
+    - target: {fileID: 6389912134466511579, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7281991118032652417, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
       propertyPath: m_Name
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193945283002470243, guid: c1353af3d6ced89f586b15313bb9311b, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51402,14 +51450,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1798811050114393296, guid: 81f2b87b104cc0bfbac13a763f7c1067, type: 3}
-      propertyPath: WolfPackPrefab
-      value: 
-      objectReference: {fileID: 6970166050604043694, guid: fd3f6446a4eb798489836c1eba67fd3d, type: 3}
-    - target: {fileID: 1798811050114393296, guid: 81f2b87b104cc0bfbac13a763f7c1067, type: 3}
-      propertyPath: PlacesToSpawn.Array.size
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 1798811050114393296, guid: 81f2b87b104cc0bfbac13a763f7c1067, type: 3}
       propertyPath: PlacesToSpawn.Array.data[0]
       value: 

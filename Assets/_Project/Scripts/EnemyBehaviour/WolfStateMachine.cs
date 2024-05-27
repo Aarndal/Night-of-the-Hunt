@@ -52,6 +52,6 @@ public class WolfStateMachine : MonoBehaviour
     }
     private void Howling()
     {
-        transform.Rotate(0, 1, 0);
+        //transform.Rotate(0, 1, 0);
     }
 }
