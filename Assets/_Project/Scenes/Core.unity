@@ -186,34 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _version: 2
-  _crossSceneReferences:
-  - _sourceObject: {fileID: 866759160}
-    _sourceField: m_UIInputModule
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: b88d1f2379412db4b9dbe9476c3a3446
-        name: PlayerCharacter
-        _path: Assets/_Project/Scenes/PlayerCharacter.unity
-      fullPath: /UIEventSystem
-      componentName: UnityEngine.InputSystem.UI.InputSystemUIInputModule, Unity.InputSystem,
-        Version=1.7.0.0, Culture=neutral, PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: 657351275
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
+  _crossSceneReferences: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!1 &866759159
