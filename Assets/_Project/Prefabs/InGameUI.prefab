@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1210438997642439287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2542679291377809763}
+  - component: {fileID: 8525328064348013147}
+  - component: {fileID: 9028162605685022501}
+  m_Layer: 0
+  m_Name: InGameUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2542679291377809763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210438997642439287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8525328064348013147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210438997642439287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 4b5d9ab30e6d524dcbedc166dfaef58d, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 259b3600fa889ffd990897469d532e43, type: 3}
+  m_SortingOrder: 0
+--- !u!114 &9028162605685022501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210438997642439287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3be1fb192e14c17a9b9f75a84552cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleSprites:
+  - {fileID: 21300000, guid: 16fd6aa6c590c8fc68d5d5d1603dc09f, type: 3}
+  - {fileID: 21300000, guid: 1964d05a58d746a02a6a42df3aecf226, type: 3}
+  - {fileID: 21300000, guid: 9b539dda2ddf874898843bc5aefc5f04, type: 3}
+  - {fileID: 21300000, guid: 0be45e42391b0376cbe4501a92f416f4, type: 3}
+  MeatPieSprites:
+  - {fileID: 21300000, guid: a986c91e92639c5aaa15144ee32d6766, type: 3}
+  - {fileID: 21300000, guid: 9c1278e43dbcf4a308abb1c96fa92669, type: 3}
+  - {fileID: 21300000, guid: 6bc119b4597f0037e9470552578e03d8, type: 3}
+  - {fileID: 21300000, guid: 37d416f9a1b9174b0ab8f5aa1d8de0ed, type: 3}
+  - {fileID: 21300000, guid: a5f06568b76280a6286240f39dbab79a, type: 3}
+  - {fileID: 21300000, guid: 95d666e906b89e0aca43ef4a8d3a7fb2, type: 3}
+  - {fileID: 21300000, guid: 77dbcef21bcc4d899a0f2939ea57b24d, type: 3}
+  - {fileID: 21300000, guid: dba118f50b06c79b09c0beee1bf8f4ed, type: 3}
+  - {fileID: 21300000, guid: 2debca46014b8388cbe6c1663a7ab26b, type: 3}
+  WineSprites:
+  - {fileID: 21300000, guid: 88a6772afa2fca248a92f793abdc4b26, type: 3}
+  - {fileID: 21300000, guid: 2c05c7de312cee942862f2ab57bc2e47, type: 3}
+  - {fileID: 21300000, guid: 64123f501c9e7fd409e9a8370b233e16, type: 3}
+  - {fileID: 21300000, guid: e293ee353b5eac247a25f057e0472f65, type: 3}
+  - {fileID: 21300000, guid: 821742317229a4d489fe020102e0b511, type: 3}

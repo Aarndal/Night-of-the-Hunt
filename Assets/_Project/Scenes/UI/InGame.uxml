@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/InGameStyleSheet.uss?fileID=7433441132597879392&amp;guid=f09cce68b854b513399ea14c1b3eb580&amp;type=3#InGameStyleSheet" />
+    <ui:VisualElement name="Game" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="LeftSide" style="flex-grow: 1; left: 0;">
+            <ui:VisualElement name="MiniMapContainer" style="flex-grow: 1;">
+                <ui:VisualElement name="MiniMapContent" style="left: 63px; top: 37px; width: 284px; height: 314px; background-image: url(&quot;project://database/Assets/_Project/Art/UI/MiniMap/MiniMapRenderer.renderTexture?fileID=8400000&amp;guid=1cff08fd7af07db29a3f9efdfde3c315&amp;type=2#MiniMapRenderer&quot;); -unity-background-scale-mode: scale-to-fit; margin-top: -2px; margin-right: -2px; margin-bottom: -2px; margin-left: -2px; position: absolute; overflow: visible; opacity: 1; padding-left: 0;" />
+                <ui:VisualElement name="MiniMapBorder" style="width: 424px; height: 390px; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/MiniMap/Minimap_Frame.png?fileID=21300000&amp;guid=f1ecafabafa18314c8ea0ccadcdc6cc3&amp;type=3#Minimap_Frame&quot;); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; left: 0; top: 0; right: auto;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightSide" style="flex-grow: 1; right: 0;">
+            <ui:VisualElement name="MeatPiContainer" style="flex-grow: 1; height: 13%; position: absolute; top: 150px; right: 22%; width: 19%;">
+                <ui:VisualElement name="MeatPieImage" style="flex-grow: 1; top: 0; right: 0; position: absolute; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/PieChart/Pie_chart_0_missing.png?fileID=21300000&amp;guid=2debca46014b8388cbe6c1663a7ab26b&amp;type=3#Pie_chart_0_missing&quot;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="WineContrainer" style="flex-grow: 1; width: 17%; height: 16%; top: 141px; right: 3%; position: absolute;">
+                <ui:VisualElement name="WineImage" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/WineBottle/WineBottle_00.png?fileID=21300000&amp;guid=821742317229a4d489fe020102e0b511&amp;type=3#WineBottle_00&quot;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="PuzzleContainer" style="flex-grow: 1; position: absolute; right: 0; bottom: 0; width: 40%; height: 20%; flex-direction: row;">
+                <ui:VisualElement name="Left" style="flex-grow: 1; height: 100%; width: 50%;">
+                    <ui:VisualElement name="PuzzleImageFour" style="flex-grow: 1; width: 100%; height: 50%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/PuzzleProgression/Puzzlepiece_4.png?fileID=2800000&amp;guid=0be45e42391b0376cbe4501a92f416f4&amp;type=3#Puzzlepiece_4&quot;);" />
+                    <ui:VisualElement name="PuzzleImageOne" style="flex-grow: 1; width: 100%; height: 50%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/PuzzleProgression/Puzzlepiece_1.png?fileID=2800000&amp;guid=16fd6aa6c590c8fc68d5d5d1603dc09f&amp;type=3#Puzzlepiece_1&quot;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Right" style="flex-grow: 1; width: 50%; height: 100%;">
+                    <ui:VisualElement name="PuzzleImageThree" style="flex-grow: 1; width: 100%; height: 50%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/PuzzleProgression/Puzzlepiece_3.png?fileID=2800000&amp;guid=9b539dda2ddf874898843bc5aefc5f04&amp;type=3#Puzzlepiece_3&quot;);" />
+                    <ui:VisualElement name="PuzzleImageTwo" style="flex-grow: 1; width: 100%; height: 50%; background-image: url(&quot;project://database/Assets/_Project/Art/UI/Ingame/PuzzleProgression/Puzzlepiece_2.png?fileID=2800000&amp;guid=1964d05a58d746a02a6a42df3aecf226&amp;type=3#Puzzlepiece_2&quot;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

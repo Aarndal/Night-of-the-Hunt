@@ -1,0 +1,27 @@
+#HealthBar Label {
+    display: none;
+    -unity-background-image-tint-color: rgb(255, 0, 0);
+}
+
+#HealthBar #unity-drag-container {
+    -unity-background-image-tint-color: rgba(236, 43, 43, 0.99);
+    background-color: rgb(255, 0, 0);
+    overflow: hidden;
+    display: none;
+}
+
+#HealthBar #unity-tracker {
+    background-color: rgba(255, 0, 0, 0);
+    display: none;
+}
+
+#HealthBar #unity-dragger {
+    display: flex;
+}
+
+.bar {
+    width: 2000px;
+    height: 100%;
+    background-color: rgb(146, 0, 0);
+    align-self: flex-end;
+}
