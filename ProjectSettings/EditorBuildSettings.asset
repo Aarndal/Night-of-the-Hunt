@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/Enemies.unity
     guid: c456c331fced6d742a9f9e215809bf87
   - enabled: 1
+    path: Assets/_Project/Scenes/Menu_Audio.unity
+    guid: 200be22f32165ee43b216bf5bccf35e7
+  - enabled: 1
     path: Assets/_Project/Scenes/CaveScenes/Cave_01.unity
     guid: d47d0368b742bf7cda74b822ab24af05
   - enabled: 1
