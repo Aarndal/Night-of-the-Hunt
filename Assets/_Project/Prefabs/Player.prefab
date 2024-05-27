@@ -765,6 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {x: 0, y: 0}
+  aim: {x: 0, y: 0}
   getInput: 0
   isSprinting: 0
 --- !u!114 &6028405180417606840

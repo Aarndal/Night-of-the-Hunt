@@ -171,6 +171,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1428782423747494977, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1428782423747494977, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Name
+      value: FogAmount
+      objectReference: {fileID: 0}
+    - target: {fileID: 1428782423747494977, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Value
+      value: 283.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1428782423747494977, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673110213552354956, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_Intensity
+      value: 7.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673110213552354956, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673110213552354956, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 5.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673110213552354956, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_LocalBounds.m_Center.y
+      value: -0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673110213552354956, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.x
+      value: 0.9985302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673110213552354956, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.y
+      value: 0.99853027
+      objectReference: {fileID: 0}
     - target: {fileID: 3705610341617337424, guid: 65326a913689c2911aeb0fd9f15ce56c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -320,7 +360,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
